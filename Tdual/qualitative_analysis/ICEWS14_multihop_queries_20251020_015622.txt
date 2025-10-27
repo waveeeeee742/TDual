@@ -1,0 +1,3024 @@
+====================================================================================================
+MULTI-HOP QUERY QUALITATIVE ANALYSIS
+====================================================================================================
+
+
+====================================================================================================
+1-HOP QUERIES (Total: 50)
+====================================================================================================
+
+Example 1:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Malaysia, Express_intent_to_cooperate, ?)
+  IDs: (30, 13, ?)
+
+Ground Truth:
+  Thailand (ID: 18)
+
+Model Prediction:
+  Top-1: Thailand (ID: 18)
+  Rank of true answer: 1
+  Prediction score: -0.584425
+  Correct: ✓ YES
+
+Example 2:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Haider_Al-Abadi, Make_statement, ?)
+  IDs: (77, 0, ?)
+
+Ground Truth:
+  Iraq (ID: 8)
+
+Model Prediction:
+  Top-1: Iraq (ID: 8)
+  Rank of true answer: 1
+  Prediction score: -1.009083
+  Correct: ✓ YES
+
+Example 3:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Court_Judge_(India), Make_an_appeal_or_request, ?)
+  IDs: (44, 2, ?)
+
+Ground Truth:
+  Citizen_(India) (ID: 3)
+
+Model Prediction:
+  Top-1: Citizen_(India) (ID: 3)
+  Rank of true answer: 1
+  Prediction score: -0.183095
+  Correct: ✓ YES
+
+Example 4:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Alexis_Tsipras, Make_statement, ?)
+  IDs: (271, 0, ?)
+
+Ground Truth:
+  Evangelos_Venizelos (ID: 131)
+
+Model Prediction:
+  Top-1: Antonis_Samaras (ID: 72)
+  Rank of true answer: 4
+  Prediction score: -1.000017
+  Correct: ✗ NO
+
+Example 5:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Government_(Nigeria), Use_conventional_military_force, ?)
+  IDs: (9, 11, ?)
+
+Ground Truth:
+  Boko_Haram (ID: 28)
+
+Model Prediction:
+  Top-1: Citizen_(Nigeria) (ID: 2)
+  Rank of true answer: 2
+  Prediction score: -0.439309
+  Correct: ✗ NO
+
+Example 6:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Hamas, Criticize_or_denounce, ?)
+  IDs: (53, 8, ?)
+
+Ground Truth:
+  Head_of_Government_(Palestinian_Territory,_Occupied) (ID: 347)
+
+Model Prediction:
+  Top-1: Government_(Palestinian_Territory,_Occupied) (ID: 287)
+  Rank of true answer: 19
+  Prediction score: -1.526024
+  Correct: ✗ NO
+
+Example 7:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Police_(Kenya), Make_an_appeal_or_request, ?)
+  IDs: (32, 2, ?)
+
+Ground Truth:
+  Citizen_(Kenya) (ID: 16)
+
+Model Prediction:
+  Top-1: Citizen_(Kenya) (ID: 16)
+  Rank of true answer: 1
+  Prediction score: -0.345718
+  Correct: ✓ YES
+
+Example 8:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Ashraf_Ghani_Ahmadzai, Consult, ?)
+  IDs: (33, 1, ?)
+
+Ground Truth:
+  Jens_Stoltenberg (ID: 258)
+
+Model Prediction:
+  Top-1: Abdullah_Abdullah (ID: 40)
+  Rank of true answer: 4
+  Prediction score: -0.683766
+  Correct: ✗ NO
+
+Example 9:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Refugee_(Afghanistan), Make_a_visit, ?)
+  IDs: (864, 4, ?)
+
+Ground Truth:
+  Iran (ID: 1)
+
+Model Prediction:
+  Top-1: Iran (ID: 1)
+  Rank of true answer: 1
+  Prediction score: -0.009390
+  Correct: ✓ YES
+
+Example 10:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Grand_National_Party, Express_intent_to_meet_or_negotiate, ?)
+  IDs: (551, 3, ?)
+
+Ground Truth:
+  Citizen_(South_Korea) (ID: 60)
+
+Model Prediction:
+  Top-1: China (ID: 0)
+  Rank of true answer: 4
+  Prediction score: -1.393262
+  Correct: ✗ NO
+
+Example 11:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Umar_al_Bashir, Make_statement, ?)
+  IDs: (145, 0, ?)
+
+Ground Truth:
+  Sudan (ID: 37)
+
+Model Prediction:
+  Top-1: Umar_al_Bashir (ID: 145)
+  Rank of true answer: 3
+  Prediction score: -2.430163
+  Correct: ✗ NO
+
+Example 12:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Protester_(Egypt), Protest_violently,_riot, ?)
+  IDs: (127, 31, ?)
+
+Ground Truth:
+  Police_(Egypt) (ID: 64)
+
+Model Prediction:
+  Top-1: Police_(Egypt) (ID: 64)
+  Rank of true answer: 1
+  Prediction score: -0.012348
+  Correct: ✓ YES
+
+Example 13:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Student_(Hong_Kong), Make_statement, ?)
+  IDs: (337, 0, ?)
+
+Ground Truth:
+  Protester_(Hong_Kong) (ID: 91)
+
+Model Prediction:
+  Top-1: Protester_(Hong_Kong) (ID: 91)
+  Rank of true answer: 1
+  Prediction score: -0.992334
+  Correct: ✓ YES
+
+Example 14:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Thailand, Express_intent_to_cooperate, ?)
+  IDs: (18, 13, ?)
+
+Ground Truth:
+  Malaysia (ID: 30)
+
+Model Prediction:
+  Top-1: Malaysia (ID: 30)
+  Rank of true answer: 1
+  Prediction score: -0.490661
+  Correct: ✓ YES
+
+Example 15:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Police_(Australia), Arrest,_detain,_or_charge_with_legal_action, ?)
+  IDs: (19, 6, ?)
+
+Ground Truth:
+  Citizen_(Australia) (ID: 17)
+
+Model Prediction:
+  Top-1: Citizen_(Australia) (ID: 17)
+  Rank of true answer: 1
+  Prediction score: -0.253963
+  Correct: ✓ YES
+
+Example 16:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Terrorist_(Islamic_State_of_Iraq_and_the_Levant), Threaten, ?)
+  IDs: (267, 23, ?)
+
+Ground Truth:
+  Iraq (ID: 8)
+
+Model Prediction:
+  Top-1: Iraq (ID: 8)
+  Rank of true answer: 1
+  Prediction score: -0.414237
+  Correct: ✓ YES
+
+Example 17:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Protester_(Hong_Kong), Consult, ?)
+  IDs: (91, 1, ?)
+
+Ground Truth:
+  Police_(Hong_Kong) (ID: 101)
+
+Model Prediction:
+  Top-1: Police_(Hong_Kong) (ID: 101)
+  Rank of true answer: 1
+  Prediction score: -0.115337
+  Correct: ✓ YES
+
+Example 18:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Citizen_(Nigeria), Make_an_appeal_or_request, ?)
+  IDs: (2, 2, ?)
+
+Ground Truth:
+  Government_(Nigeria) (ID: 9)
+
+Model Prediction:
+  Top-1: Government_(Nigeria) (ID: 9)
+  Rank of true answer: 1
+  Prediction score: -2.081192
+  Correct: ✓ YES
+
+Example 19:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Abdullah_Abdullah, Meet_at_a_'third'_location, ?)
+  IDs: (40, 27, ?)
+
+Ground Truth:
+  Ashraf_Ghani_Ahmadzai (ID: 33)
+
+Model Prediction:
+  Top-1: Ashraf_Ghani_Ahmadzai (ID: 33)
+  Rank of true answer: 1
+  Prediction score: -0.237688
+  Correct: ✓ YES
+
+Example 20:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Head_of_Government_(China), Express_intent_to_meet_or_negotiate, ?)
+  IDs: (109, 3, ?)
+
+Ground Truth:
+  China (ID: 0)
+
+Model Prediction:
+  Top-1: China (ID: 0)
+  Rank of true answer: 1
+  Prediction score: -1.226635
+  Correct: ✓ YES
+
+Example 21:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Israeli_Defense_Forces, fight_with_small_arms_and_light_weapons, ?)
+  IDs: (54, 21, ?)
+
+Ground Truth:
+  Women_(Palestinian_Territory,_Occupied) (ID: 1760)
+
+Model Prediction:
+  Top-1: Children_(Palestinian_Territory,_Occupied) (ID: 187)
+  Rank of true answer: 3
+  Prediction score: -0.393550
+  Correct: ✗ NO
+
+Example 22:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Abdel_Fattah_Al-Sisi, Express_intent_to_engage_in_diplomatic_cooperation_(such_as_policy_support), ?)
+  IDs: (41, 15, ?)
+
+Ground Truth:
+  Sudan (ID: 37)
+
+Model Prediction:
+  Top-1: Abdel_Fattah_Al-Sisi (ID: 41)
+  Rank of true answer: 38
+  Prediction score: -1.296009
+  Correct: ✗ NO
+
+Example 23:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Maithripala_Sirisena, Make_statement, ?)
+  IDs: (886, 0, ?)
+
+Ground Truth:
+  Mahinda_Rajapaksa (ID: 201)
+
+Model Prediction:
+  Top-1: China (ID: 0)
+  Rank of true answer: 3
+  Prediction score: -1.308659
+  Correct: ✗ NO
+
+Example 24:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Citizen_(Sudan), Physically_assault, ?)
+  IDs: (107, 36, ?)
+
+Ground Truth:
+  Police_(Sudan) (ID: 332)
+
+Model Prediction:
+  Top-1: Police_(Sudan) (ID: 332)
+  Rank of true answer: 1
+  Prediction score: -1.914948
+  Correct: ✓ YES
+
+Example 25:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Scholar_(Nigeria), Make_statement, ?)
+  IDs: (964, 0, ?)
+
+Ground Truth:
+  Muslim_(Nigeria) (ID: 297)
+
+Model Prediction:
+  Top-1: Government_(Nigeria) (ID: 9)
+  Rank of true answer: 22
+  Prediction score: -0.974676
+  Correct: ✗ NO
+
+Example 26:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Mohammad_Javad_Zarif, Make_statement, ?)
+  IDs: (14, 0, ?)
+
+Ground Truth:
+  Iran (ID: 1)
+
+Model Prediction:
+  Top-1: Iran (ID: 1)
+  Rank of true answer: 1
+  Prediction score: -0.168278
+  Correct: ✓ YES
+
+Example 27:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Congress_(United_States), Impose_embargo,_boycott,_or_sanctions, ?)
+  IDs: (299, 52, ?)
+
+Ground Truth:
+  Iran (ID: 1)
+
+Model Prediction:
+  Top-1: Iran (ID: 1)
+  Rank of true answer: 1
+  Prediction score: -0.657850
+  Correct: ✓ YES
+
+Example 28:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Citizen_(India), fight_with_small_arms_and_light_weapons, ?)
+  IDs: (3, 21, ?)
+
+Ground Truth:
+  Military_Personnel_-_Special_(India) (ID: 225)
+
+Model Prediction:
+  Top-1: Thief_(India) (ID: 154)
+  Rank of true answer: 2
+  Prediction score: -1.064270
+  Correct: ✗ NO
+
+Example 29:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Sri_Lanka_United_National_Party, Praise_or_endorse, ?)
+  IDs: (2643, 7, ?)
+
+Ground Truth:
+  Maithripala_Sirisena (ID: 886)
+
+Model Prediction:
+  Top-1: Iran (ID: 1)
+  Rank of true answer: 55
+  Prediction score: -3.376784
+  Correct: ✗ NO
+
+Example 30:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Iran, Engage_in_diplomatic_cooperation, ?)
+  IDs: (1, 16, ?)
+
+Ground Truth:
+  Oman (ID: 148)
+
+Model Prediction:
+  Top-1: Oman (ID: 148)
+  Rank of true answer: 1
+  Prediction score: -1.317377
+  Correct: ✓ YES
+
+Example 31:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Head_of_Government_(India), Make_statement, ?)
+  IDs: (47, 0, ?)
+
+Ground Truth:
+  Employee_(India) (ID: 56)
+
+Model Prediction:
+  Top-1: Head_of_Government_(India) (ID: 47)
+  Rank of true answer: 2
+  Prediction score: -2.175871
+  Correct: ✗ NO
+
+Example 32:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Boko_Haram, Make_an_appeal_or_request, ?)
+  IDs: (28, 2, ?)
+
+Ground Truth:
+  Government_(Nigeria) (ID: 9)
+
+Model Prediction:
+  Top-1: Citizen_(Nigeria) (ID: 2)
+  Rank of true answer: 2
+  Prediction score: -0.855375
+  Correct: ✗ NO
+
+Example 33:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Hamas, Make_statement, ?)
+  IDs: (53, 0, ?)
+
+Ground Truth:
+  Government_(Palestinian_Territory,_Occupied) (ID: 287)
+
+Model Prediction:
+  Top-1: Benjamin_Netanyahu (ID: 22)
+  Rank of true answer: 2
+  Prediction score: -1.212431
+  Correct: ✗ NO
+
+Example 34:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Media_Personnel_(Australia), Make_an_appeal_or_request, ?)
+  IDs: (374, 2, ?)
+
+Ground Truth:
+  Citizen_(Australia) (ID: 17)
+
+Model Prediction:
+  Top-1: Citizen_(Australia) (ID: 17)
+  Rank of true answer: 1
+  Prediction score: -0.188323
+  Correct: ✓ YES
+
+Example 35:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Lawyer/Attorney_(South_Korea), Investigate, ?)
+  IDs: (193, 18, ?)
+
+Ground Truth:
+  Citizen_(South_Korea) (ID: 60)
+
+Model Prediction:
+  Top-1: Citizen_(South_Korea) (ID: 60)
+  Rank of true answer: 1
+  Prediction score: -1.180309
+  Correct: ✓ YES
+
+Example 36:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Philippines, Arrest,_detain,_or_charge_with_legal_action, ?)
+  IDs: (20, 6, ?)
+
+Ground Truth:
+  Criminal_(Philippines) (ID: 108)
+
+Model Prediction:
+  Top-1: Criminal_(Philippines) (ID: 108)
+  Rank of true answer: 1
+  Prediction score: -0.728387
+  Correct: ✓ YES
+
+Example 37:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Citizen_(Kenya), Demand, ?)
+  IDs: (16, 14, ?)
+
+Ground Truth:
+  Government_(Kenya) (ID: 36)
+
+Model Prediction:
+  Top-1: Government_(Kenya) (ID: 36)
+  Rank of true answer: 1
+  Prediction score: -0.981041
+  Correct: ✓ YES
+
+Example 38:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Nuri_al-Maliki, Make_statement, ?)
+  IDs: (42, 0, ?)
+
+Ground Truth:
+  Iraq (ID: 8)
+
+Model Prediction:
+  Top-1: Iraq (ID: 8)
+  Rank of true answer: 1
+  Prediction score: -1.084634
+  Correct: ✓ YES
+
+Example 39:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Thailand, Express_intent_to_engage_in_diplomatic_cooperation_(such_as_policy_support), ?)
+  IDs: (18, 15, ?)
+
+Ground Truth:
+  Malaysia (ID: 30)
+
+Model Prediction:
+  Top-1: Cambodia (ID: 80)
+  Rank of true answer: 2
+  Prediction score: -1.922922
+  Correct: ✗ NO
+
+Example 40:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Police_(Egypt), Use_tactics_of_violent_repression, ?)
+  IDs: (64, 34, ?)
+
+Ground Truth:
+  Protester_(Egypt) (ID: 127)
+
+Model Prediction:
+  Top-1: Protester_(Egypt) (ID: 127)
+  Rank of true answer: 1
+  Prediction score: -0.025720
+  Correct: ✓ YES
+
+Example 41:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Israeli_Defense_Forces, Use_conventional_military_force, ?)
+  IDs: (54, 11, ?)
+
+Ground Truth:
+  Women_(Palestinian_Territory,_Occupied) (ID: 1760)
+
+Model Prediction:
+  Top-1: Children_(Palestinian_Territory,_Occupied) (ID: 187)
+  Rank of true answer: 2
+  Prediction score: -0.605133
+  Correct: ✗ NO
+
+Example 42:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Police_(Gambia), Arrest,_detain,_or_charge_with_legal_action, ?)
+  IDs: (1536, 6, ?)
+
+Ground Truth:
+  Mambury_Njie (ID: 2848)
+
+Model Prediction:
+  Top-1: Mambury_Njie (ID: 2848)
+  Rank of true answer: 1
+  Prediction score: -1.069287
+  Correct: ✓ YES
+
+Example 43:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Iran, Engage_in_diplomatic_cooperation, ?)
+  IDs: (1, 16, ?)
+
+Ground Truth:
+  Qatar (ID: 58)
+
+Model Prediction:
+  Top-1: Qatar (ID: 58)
+  Rank of true answer: 1
+  Prediction score: -2.046408
+  Correct: ✓ YES
+
+Example 44:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Japan, Express_intent_to_engage_in_diplomatic_cooperation_(such_as_policy_support), ?)
+  IDs: (5, 15, ?)
+
+Ground Truth:
+  South_Korea (ID: 7)
+
+Model Prediction:
+  Top-1: China (ID: 0)
+  Rank of true answer: 2
+  Prediction score: -1.744934
+  Correct: ✗ NO
+
+Example 45:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Bukola_Saraki, Make_an_appeal_or_request, ?)
+  IDs: (677, 2, ?)
+
+Ground Truth:
+  Government_(Nigeria) (ID: 9)
+
+Model Prediction:
+  Top-1: Citizen_(Nigeria) (ID: 2)
+  Rank of true answer: 2
+  Prediction score: -0.245807
+  Correct: ✗ NO
+
+Example 46:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Sergey_Viktorovich_Lavrov, Express_intent_to_meet_or_negotiate, ?)
+  IDs: (12, 3, ?)
+
+Ground Truth:
+  Sudan (ID: 37)
+
+Model Prediction:
+  Top-1: Sudan (ID: 37)
+  Rank of true answer: 1
+  Prediction score: -0.336752
+  Correct: ✓ YES
+
+Example 47:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Police_(Hong_Kong), Physically_assault, ?)
+  IDs: (101, 36, ?)
+
+Ground Truth:
+  Protester_(Hong_Kong) (ID: 91)
+
+Model Prediction:
+  Top-1: Protester_(Hong_Kong) (ID: 91)
+  Rank of true answer: 1
+  Prediction score: -0.077224
+  Correct: ✓ YES
+
+Example 48:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Government_(Venezuela), Make_statement, ?)
+  IDs: (137, 0, ?)
+
+Ground Truth:
+  Criminal_(Venezuela) (ID: 812)
+
+Model Prediction:
+  Top-1: Ministry_(Venezuela) (ID: 1108)
+  Rank of true answer: 3
+  Prediction score: -2.287421
+  Correct: ✗ NO
+
+Example 49:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Court_Judge_(Kenya), Impose_administrative_sanctions, ?)
+  IDs: (255, 43, ?)
+
+Ground Truth:
+  Member_of_Legislative_(Govt)_(Kenya) (ID: 786)
+
+Model Prediction:
+  Top-1: Citizen_(Kenya) (ID: 16)
+  Rank of true answer: 163
+  Prediction score: -0.535876
+  Correct: ✗ NO
+
+Example 50:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Boko_Haram, Abduct,_hijack,_or_take_hostage, ?)
+  IDs: (28, 25, ?)
+
+Ground Truth:
+  Citizen_(Nigeria) (ID: 2)
+
+Model Prediction:
+  Top-1: Citizen_(Nigeria) (ID: 2)
+  Rank of true answer: 1
+  Prediction score: -0.098526
+  Correct: ✓ YES
+
+
+====================================================================================================
+2-HOP QUERIES (Total: 50)
+====================================================================================================
+
+Example 1:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Bahrain, Reject, ?)
+  IDs: (88, 20, ?)
+
+Ground Truth:
+  North_Atlantic_Treaty_Organization (ID: 24)
+
+Model Prediction:
+  Top-1: Qatar (ID: 58)
+  Rank of true answer: 141
+  Prediction score: -0.831149
+  Correct: ✗ NO
+
+Example 2:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Lin_Chia-lung, Occupy_territory, ?)
+  IDs: (2843, 35, ?)
+
+Ground Truth:
+  Kuomintang (ID: 585)
+
+Model Prediction:
+  Top-1: Jason_C._Hu (ID: 2819)
+  Rank of true answer: 177
+  Prediction score: -1.951378
+  Correct: ✗ NO
+
+Example 3:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Company_-_Owner_or_Operator_(Turkey), Consult, ?)
+  IDs: (1897, 1, ?)
+
+Ground Truth:
+  Mulatu_Teshome (ID: 469)
+
+Model Prediction:
+  Top-1: Umar_al_Bashir (ID: 145)
+  Rank of true answer: 26
+  Prediction score: -1.675253
+  Correct: ✗ NO
+
+Example 4:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Member_of_Parliament_(India), Make_an_appeal_or_request, ?)
+  IDs: (102, 2, ?)
+
+Ground Truth:
+  Justice_Department/Ministery_(India) (ID: 842)
+
+Model Prediction:
+  Top-1: Citizen_(India) (ID: 3)
+  Rank of true answer: 24
+  Prediction score: -0.272438
+  Correct: ✗ NO
+
+Example 5:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Military_(Lebanon), Arrest,_detain,_or_charge_with_legal_action, ?)
+  IDs: (82, 6, ?)
+
+Ground Truth:
+  Citizen_(Australia) (ID: 17)
+
+Model Prediction:
+  Top-1: Armed_Gang_(Syria) (ID: 736)
+  Rank of true answer: 571
+  Prediction score: -0.841725
+  Correct: ✗ NO
+
+Example 6:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Djoomart_Otorbaev, Consult, ?)
+  IDs: (1132, 1, ?)
+
+Ground Truth:
+  Dmitry_Anatolyevich_Medvedev (ID: 181)
+
+Model Prediction:
+  Top-1: Dmitry_Anatolyevich_Medvedev (ID: 181)
+  Rank of true answer: 1
+  Prediction score: -1.229850
+  Correct: ✓ YES
+
+Example 7:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Sylvia_Masebo, Make_statement, ?)
+  IDs: (1859, 0, ?)
+
+Ground Truth:
+  Guy_Scott (ID: 402)
+
+Model Prediction:
+  Top-1: Michael_Sata (ID: 234)
+  Rank of true answer: 6
+  Prediction score: -0.742625
+  Correct: ✗ NO
+
+Example 8:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Company_-_Owner_or_Operator_(Nigeria), Consult, ?)
+  IDs: (241, 1, ?)
+
+Ground Truth:
+  Vanguard (ID: 606)
+
+Model Prediction:
+  Top-1: Head_of_Government_(Nigeria) (ID: 52)
+  Rank of true answer: 4
+  Prediction score: -1.550357
+  Correct: ✗ NO
+
+Example 9:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Ministry_(Russia), Make_statement, ?)
+  IDs: (259, 0, ?)
+
+Ground Truth:
+  Sudan (ID: 37)
+
+Model Prediction:
+  Top-1: Interfax (ID: 227)
+  Rank of true answer: 73
+  Prediction score: -1.882664
+  Correct: ✗ NO
+
+Example 10:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Abdullah_Abdullah, Meet_at_a_'third'_location, ?)
+  IDs: (40, 27, ?)
+
+Ground Truth:
+  Jens_Stoltenberg (ID: 258)
+
+Model Prediction:
+  Top-1: North_Atlantic_Treaty_Organization (ID: 24)
+  Rank of true answer: 2
+  Prediction score: -2.244943
+  Correct: ✗ NO
+
+Example 11:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Head_of_Government_(Afghanistan), Make_statement, ?)
+  IDs: (161, 0, ?)
+
+Ground Truth:
+  Ministry_(Afghanistan) (ID: 639)
+
+Model Prediction:
+  Top-1: Afghanistan (ID: 15)
+  Rank of true answer: 8
+  Prediction score: -1.145078
+  Correct: ✗ NO
+
+Example 12:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Ministry_(South_Korea), Make_statement, ?)
+  IDs: (697, 0, ?)
+
+Ground Truth:
+  Philippines (ID: 20)
+
+Model Prediction:
+  Top-1: South_Korea (ID: 7)
+  Rank of true answer: 60
+  Prediction score: -0.838420
+  Correct: ✗ NO
+
+Example 13:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Bishop_(Nigeria), Make_statement, ?)
+  IDs: (875, 0, ?)
+
+Ground Truth:
+  Emmanuel_Eweta_Uduaghan (ID: 205)
+
+Model Prediction:
+  Top-1: Government_(Nigeria) (ID: 9)
+  Rank of true answer: 49
+  Prediction score: -0.681991
+  Correct: ✗ NO
+
+Example 14:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Administrative_Body_(India), Consult, ?)
+  IDs: (2203, 1, ?)
+
+Ground Truth:
+  Member_of_Parliament_(India) (ID: 102)
+
+Model Prediction:
+  Top-1: Member_of_Parliament_(India) (ID: 102)
+  Rank of true answer: 1
+  Prediction score: -0.520266
+  Correct: ✓ YES
+
+Example 15:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Member_of_Parliament_(India), Consult, ?)
+  IDs: (102, 1, ?)
+
+Ground Truth:
+  Administrative_Body_(India) (ID: 2203)
+
+Model Prediction:
+  Top-1: Administrative_Body_(India) (ID: 2203)
+  Rank of true answer: 1
+  Prediction score: -0.352487
+  Correct: ✓ YES
+
+Example 16:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Tamil_National_Alliance, Consult, ?)
+  IDs: (1860, 1, ?)
+
+Ground Truth:
+  Maithripala_Sirisena (ID: 886)
+
+Model Prediction:
+  Top-1: Tan_Sri_Muhyiddin_Yassin (ID: 541)
+  Rank of true answer: 83
+  Prediction score: -1.654278
+  Correct: ✗ NO
+
+Example 17:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Food_and_Agriculture_Organization, Praise_or_endorse, ?)
+  IDs: (608, 7, ?)
+
+Ground Truth:
+  Mexico (ID: 49)
+
+Model Prediction:
+  Top-1: Iran (ID: 1)
+  Rank of true answer: 123
+  Prediction score: -0.620041
+  Correct: ✗ NO
+
+Example 18:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Nonofo_Molefhi, Make_statement, ?)
+  IDs: (3349, 0, ?)
+
+Ground Truth:
+  Botswana (ID: 687)
+
+Model Prediction:
+  Top-1: Botswana (ID: 687)
+  Rank of true answer: 1
+  Prediction score: -1.570227
+  Correct: ✓ YES
+
+Example 19:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Julie_Bishop, Make_statement, ?)
+  IDs: (98, 0, ?)
+
+Ground Truth:
+  Media_(Japan) (ID: 1516)
+
+Model Prediction:
+  Top-1: Police_(Australia) (ID: 19)
+  Rank of true answer: 772
+  Prediction score: -1.973467
+  Correct: ✗ NO
+
+Example 20:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Louise_Mushikiwabo, Criticize_or_denounce, ?)
+  IDs: (1449, 8, ?)
+
+Ground Truth:
+  François_Hollande (ID: 27)
+
+Model Prediction:
+  Top-1: France (ID: 10)
+  Rank of true answer: 8
+  Prediction score: -0.264873
+  Correct: ✗ NO
+
+Example 21:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Mulatu_Teshome, Consult, ?)
+  IDs: (469, 1, ?)
+
+Ground Truth:
+  Company_-_Owner_or_Operator_(Turkey) (ID: 1897)
+
+Model Prediction:
+  Top-1: Tamil_National_Alliance (ID: 1860)
+  Rank of true answer: 21
+  Prediction score: -1.103283
+  Correct: ✗ NO
+
+Example 22:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Willem-Alexander, Engage_in_symbolic_act, ?)
+  IDs: (849, 28, ?)
+
+Ground Truth:
+  Gurbanguly_Berdymukhammedov (ID: 500)
+
+Model Prediction:
+  Top-1: Protester_(Hong_Kong) (ID: 91)
+  Rank of true answer: 1714
+  Prediction score: -2.496598
+  Correct: ✗ NO
+
+Example 23:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Haaretz, Make_statement, ?)
+  IDs: (1436, 0, ?)
+
+Ground Truth:
+  Qatar (ID: 58)
+
+Model Prediction:
+  Top-1: Benjamin_Netanyahu (ID: 22)
+  Rank of true answer: 50
+  Prediction score: -0.531310
+  Correct: ✗ NO
+
+Example 24:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Political_Parties_(Pakistan), Reject, ?)
+  IDs: (825, 20, ?)
+
+Ground Truth:
+  Pakistan_Tehreek-e-Insaf (ID: 226)
+
+Model Prediction:
+  Top-1: Head_of_Government_(Pakistan) (ID: 122)
+  Rank of true answer: 4
+  Prediction score: -1.694709
+  Correct: ✗ NO
+
+Example 25:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (House_Speaker_(Philippines), Engage_in_symbolic_act, ?)
+  IDs: (3207, 28, ?)
+
+Ground Truth:
+  Employee_(Philippines) (ID: 441)
+
+Model Prediction:
+  Top-1: Employee_(Philippines) (ID: 441)
+  Rank of true answer: 1
+  Prediction score: -2.320575
+  Correct: ✓ YES
+
+Example 26:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Alex_Badeh, Demand, ?)
+  IDs: (772, 14, ?)
+
+Ground Truth:
+  High_Ranking_Military_Personnel_(Nigeria) (ID: 591)
+
+Model Prediction:
+  Top-1: Citizen_(Nigeria) (ID: 2)
+  Rank of true answer: 24
+  Prediction score: -0.360598
+  Correct: ✗ NO
+
+Example 27:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Muhammadu_Buhari, Praise_or_endorse, ?)
+  IDs: (199, 7, ?)
+
+Ground Truth:
+  Adams_Oshiomhole (ID: 281)
+
+Model Prediction:
+  Top-1: Head_of_Government_(Nigeria) (ID: 52)
+  Rank of true answer: 65
+  Prediction score: -1.302987
+  Correct: ✗ NO
+
+Example 28:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Emmanuel_Eweta_Uduaghan, Praise_or_endorse, ?)
+  IDs: (205, 7, ?)
+
+Ground Truth:
+  Court_Judge_(Nigeria) (ID: 106)
+
+Model Prediction:
+  Top-1: Citizen_(Nigeria) (ID: 2)
+  Rank of true answer: 32
+  Prediction score: -1.295715
+  Correct: ✗ NO
+
+Example 29:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Party_Member_(Sri_Lanka), Consult, ?)
+  IDs: (1990, 1, ?)
+
+Ground Truth:
+  Maithripala_Sirisena (ID: 886)
+
+Model Prediction:
+  Top-1: Party_Member_(Sri_Lanka) (ID: 1990)
+  Rank of true answer: 22
+  Prediction score: -1.747734
+  Correct: ✗ NO
+
+Example 30:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (South_African_Chamber_of_Commerce_and_Industry, Praise_or_endorse, ?)
+  IDs: (4049, 7, ?)
+
+Ground Truth:
+  Ministry_(South_Africa) (ID: 260)
+
+Model Prediction:
+  Top-1: South_Africa (ID: 29)
+  Rank of true answer: 4
+  Prediction score: -1.562596
+  Correct: ✗ NO
+
+Example 31:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Alex_Badeh, Make_an_appeal_or_request, ?)
+  IDs: (772, 2, ?)
+
+Ground Truth:
+  High_Ranking_Military_Personnel_(Nigeria) (ID: 591)
+
+Model Prediction:
+  Top-1: Citizen_(Nigeria) (ID: 2)
+  Rank of true answer: 24
+  Prediction score: -0.199968
+  Correct: ✗ NO
+
+Example 32:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Ijaw_Youth_Council, Make_statement, ?)
+  IDs: (1371, 0, ?)
+
+Ground Truth:
+  Chibuike_Rotimi_Amaechi (ID: 197)
+
+Model Prediction:
+  Top-1: Government_(Nigeria) (ID: 9)
+  Rank of true answer: 13
+  Prediction score: -0.697884
+  Correct: ✗ NO
+
+Example 33:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (New_Zealand, Make_statement, ?)
+  IDs: (139, 0, ?)
+
+Ground Truth:
+  Criminal_(Somalia) (ID: 834)
+
+Model Prediction:
+  Top-1: Police_(New_Zealand) (ID: 468)
+  Rank of true answer: 4844
+  Prediction score: -1.848402
+  Correct: ✗ NO
+
+Example 34:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Vanguard, Consult, ?)
+  IDs: (606, 1, ?)
+
+Ground Truth:
+  Company_-_Owner_or_Operator_(Nigeria) (ID: 241)
+
+Model Prediction:
+  Top-1: Head_of_Government_(Nigeria) (ID: 52)
+  Rank of true answer: 2
+  Prediction score: -0.639466
+  Correct: ✗ NO
+
+Example 35:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Court_Judge_(Nigeria), Demand, ?)
+  IDs: (106, 14, ?)
+
+Ground Truth:
+  Lateef_Fagbemi (ID: 4712)
+
+Model Prediction:
+  Top-1: Citizen_(Nigeria) (ID: 2)
+  Rank of true answer: 1752
+  Prediction score: -0.534916
+  Correct: ✗ NO
+
+Example 36:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Tamar_Beruchashvili, Express_intent_to_meet_or_negotiate, ?)
+  IDs: (828, 3, ?)
+
+Ground Truth:
+  Jens_Stoltenberg (ID: 258)
+
+Model Prediction:
+  Top-1: Citizen_(Czech_Republic) (ID: 372)
+  Rank of true answer: 25
+  Prediction score: -1.593036
+  Correct: ✗ NO
+
+Example 37:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Maithripala_Sirisena, Consult, ?)
+  IDs: (886, 1, ?)
+
+Ground Truth:
+  Party_Member_(Sri_Lanka) (ID: 1990)
+
+Model Prediction:
+  Top-1: Mahinda_Rajapaksa (ID: 201)
+  Rank of true answer: 2
+  Prediction score: -0.719476
+  Correct: ✗ NO
+
+Example 38:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Food_and_Agriculture_Organization, Praise_or_endorse, ?)
+  IDs: (608, 7, ?)
+
+Ground Truth:
+  Cameroon (ID: 192)
+
+Model Prediction:
+  Top-1: Iran (ID: 1)
+  Rank of true answer: 844
+  Prediction score: -0.620041
+  Correct: ✗ NO
+
+Example 39:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Cao_Duc_Phat, Make_statement, ?)
+  IDs: (2440, 0, ?)
+
+Ground Truth:
+  Other_Authorities_/_Officials_(Vietnam) (ID: 1029)
+
+Model Prediction:
+  Top-1: Vietnam (ID: 23)
+  Rank of true answer: 23
+  Prediction score: -0.294866
+  Correct: ✗ NO
+
+Example 40:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Catholic_Priest_(Nigeria), Praise_or_endorse, ?)
+  IDs: (4270, 7, ?)
+
+Ground Truth:
+  Government_(Nigeria) (ID: 9)
+
+Model Prediction:
+  Top-1: Citizen_(Nigeria) (ID: 2)
+  Rank of true answer: 2
+  Prediction score: -1.488259
+  Correct: ✗ NO
+
+Example 41:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Umar_al_Bashir, Make_statement, ?)
+  IDs: (145, 0, ?)
+
+Ground Truth:
+  Malik_Agar (ID: 2123)
+
+Model Prediction:
+  Top-1: Umar_al_Bashir (ID: 145)
+  Rank of true answer: 157
+  Prediction score: -2.430163
+  Correct: ✗ NO
+
+Example 42:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Party_Member_(Sri_Lanka), Consult, ?)
+  IDs: (1990, 1, ?)
+
+Ground Truth:
+  Mahinda_Rajapaksa (ID: 201)
+
+Model Prediction:
+  Top-1: Mahinda_Rajapaksa (ID: 201)
+  Rank of true answer: 1
+  Prediction score: -1.467518
+  Correct: ✓ YES
+
+Example 43:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Joachim_Gauck, Host_a_visit, ?)
+  IDs: (485, 5, ?)
+
+Ground Truth:
+  Royal_Administration_(Spain) (ID: 580)
+
+Model Prediction:
+  Top-1: Abdullah_Abdullah (ID: 40)
+  Rank of true answer: 2
+  Prediction score: -1.007867
+  Correct: ✗ NO
+
+Example 44:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Mulatu_Teshome, Praise_or_endorse, ?)
+  IDs: (469, 7, ?)
+
+Ground Truth:
+  Company_-_Owner_or_Operator_(Turkey) (ID: 1897)
+
+Model Prediction:
+  Top-1: China (ID: 0)
+  Rank of true answer: 311
+  Prediction score: -1.782190
+  Correct: ✗ NO
+
+Example 45:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Raheel_Sharif, Consult, ?)
+  IDs: (159, 1, ?)
+
+Ground Truth:
+  John_Kerry (ID: 6)
+
+Model Prediction:
+  Top-1: John_Kerry (ID: 6)
+  Rank of true answer: 1
+  Prediction score: -0.737239
+  Correct: ✓ YES
+
+Example 46:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Umar_al_Bashir, Consult, ?)
+  IDs: (145, 1, ?)
+
+Ground Truth:
+  Sergey_Viktorovich_Lavrov (ID: 12)
+
+Model Prediction:
+  Top-1: Mulatu_Teshome (ID: 469)
+  Rank of true answer: 5
+  Prediction score: -0.804983
+  Correct: ✗ NO
+
+Example 47:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Royal_Administration_(Nigeria), Make_statement, ?)
+  IDs: (309, 0, ?)
+
+Ground Truth:
+  Indigenous_People_(Nigeria) (ID: 194)
+
+Model Prediction:
+  Top-1: Government_(Nigeria) (ID: 9)
+  Rank of true answer: 22
+  Prediction score: -1.672550
+  Correct: ✗ NO
+
+Example 48:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Sergey_Viktorovich_Lavrov, Express_intent_to_meet_or_negotiate, ?)
+  IDs: (12, 3, ?)
+
+Ground Truth:
+  Umar_al_Bashir (ID: 145)
+
+Model Prediction:
+  Top-1: John_Kerry (ID: 6)
+  Rank of true answer: 33
+  Prediction score: -3.948736
+  Correct: ✗ NO
+
+Example 49:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (International_Government_Organizations, Praise_or_endorse, ?)
+  IDs: (276, 7, ?)
+
+Ground Truth:
+  Iran (ID: 1)
+
+Model Prediction:
+  Top-1: Iraq (ID: 8)
+  Rank of true answer: 8
+  Prediction score: -2.805049
+  Correct: ✗ NO
+
+Example 50:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Poland, Praise_or_endorse, ?)
+  IDs: (73, 7, ?)
+
+Ground Truth:
+  Lawmaker_(Poland) (ID: 4719)
+
+Model Prediction:
+  Top-1: North_Atlantic_Treaty_Organization (ID: 24)
+  Rank of true answer: 165
+  Prediction score: -2.154553
+  Correct: ✗ NO
+
+
+====================================================================================================
+3-HOP QUERIES (Total: 50)
+====================================================================================================
+
+Example 1:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Cambodia, Host_a_visit, ?)
+  IDs: (80, 5, ?)
+
+Ground Truth:
+  Education_Ministry_(China) (ID: 2756)
+
+Model Prediction:
+  Top-1: Thailand (ID: 18)
+  Rank of true answer: 3
+  Prediction score: -0.070777
+  Correct: ✗ NO
+
+Example 2:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Business_(Russia), Consult, ?)
+  IDs: (298, 1, ?)
+
+Ground Truth:
+  Representatives_(Belarus) (ID: 3403)
+
+Model Prediction:
+  Top-1: Sergey_Viktorovich_Lavrov (ID: 12)
+  Rank of true answer: 9
+  Prediction score: -1.484752
+  Correct: ✗ NO
+
+Example 3:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Education_Ministry_(China), Consult, ?)
+  IDs: (2756, 1, ?)
+
+Ground Truth:
+  Tan_Sri_Muhyiddin_Yassin (ID: 541)
+
+Model Prediction:
+  Top-1: Ministry_of_Public_Security_(China) (ID: 1109)
+  Rank of true answer: 3
+  Prediction score: -1.101277
+  Correct: ✗ NO
+
+Example 4:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Vanguard, Make_statement, ?)
+  IDs: (606, 0, ?)
+
+Ground Truth:
+  Pope_Francis (ID: 75)
+
+Model Prediction:
+  Top-1: Head_of_Government_(Nigeria) (ID: 52)
+  Rank of true answer: 3535
+  Prediction score: -1.452210
+  Correct: ✗ NO
+
+Example 5:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Education_Ministry_(China), Make_a_visit, ?)
+  IDs: (2756, 4, ?)
+
+Ground Truth:
+  Cambodia (ID: 80)
+
+Model Prediction:
+  Top-1: China (ID: 0)
+  Rank of true answer: 5
+  Prediction score: -0.568620
+  Correct: ✗ NO
+
+Example 6:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Representatives_(Belarus), Consult, ?)
+  IDs: (3403, 1, ?)
+
+Ground Truth:
+  Business_(Russia) (ID: 298)
+
+Model Prediction:
+  Top-1: Dmitry_Anatolyevich_Medvedev (ID: 181)
+  Rank of true answer: 10
+  Prediction score: -0.421331
+  Correct: ✗ NO
+
+Example 7:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Tan_Sri_Muhyiddin_Yassin, Consult, ?)
+  IDs: (541, 1, ?)
+
+Ground Truth:
+  Education_Ministry_(China) (ID: 2756)
+
+Model Prediction:
+  Top-1: Tamil_National_Alliance (ID: 1860)
+  Rank of true answer: 2
+  Prediction score: -1.258947
+  Correct: ✗ NO
+
+Example 8:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Peter_Ryan, Criticize_or_denounce, ?)
+  IDs: (3372, 8, ?)
+
+Ground Truth:
+  Barnaby_Joyce (ID: 1276)
+
+Model Prediction:
+  Top-1: Member_of_Parliament_(Australia) (ID: 214)
+  Rank of true answer: 27
+  Prediction score: -1.307500
+  Correct: ✗ NO
+
+Example 9:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Uganda_Police_Force, Make_statement, ?)
+  IDs: (5228, 0, ?)
+
+Ground Truth:
+  Police_(Uganda) (ID: 385)
+
+Model Prediction:
+  Top-1: John_Kerry (ID: 6)
+  Rank of true answer: 3597
+  Prediction score: -1.739439
+  Correct: ✗ NO
+
+Example 10:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Lawmaker_(Russia), Express_intent_to_meet_or_negotiate, ?)
+  IDs: (726, 3, ?)
+
+Ground Truth:
+  Government_Official_(Vietnam) (ID: 2487)
+
+Model Prediction:
+  Top-1: North_Atlantic_Treaty_Organization (ID: 24)
+  Rank of true answer: 3454
+  Prediction score: -1.582855
+  Correct: ✗ NO
+
+Example 11:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Peter_Ryan, Make_statement, ?)
+  IDs: (3372, 0, ?)
+
+Ground Truth:
+  Barnaby_Joyce (ID: 1276)
+
+Model Prediction:
+  Top-1: Member_of_Parliament_(Australia) (ID: 214)
+  Rank of true answer: 13
+  Prediction score: -1.379053
+  Correct: ✗ NO
+
+Example 12:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (John_Kerry, Make_an_appeal_or_request, ?)
+  IDs: (6, 2, ?)
+
+Ground Truth:
+  Government_(Qatar) (ID: 1792)
+
+Model Prediction:
+  Top-1: China (ID: 0)
+  Rank of true answer: 615
+  Prediction score: -1.835434
+  Correct: ✗ NO
+
+Example 13:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Agriculture_/_Fishing_/_Forestry_Ministry_(Vietnam), Make_an_appeal_or_request, ?)
+  IDs: (4134, 2, ?)
+
+Ground Truth:
+  Vietnam (ID: 23)
+
+Model Prediction:
+  Top-1: Vietnam (ID: 23)
+  Rank of true answer: 1
+  Prediction score: -1.642263
+  Correct: ✓ YES
+
+Example 14:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 335:
+  (Stephen_Hadley, Make_a_visit, ?)
+  IDs: (2183, 4, ?)
+
+Ground Truth:
+  Education_(United_States) (ID: 1229)
+
+Model Prediction:
+  Top-1: China (ID: 0)
+  Rank of true answer: 2
+  Prediction score: -1.052505
+  Correct: ✗ NO
+
+Example 15:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 335:
+  (Member_of_Parliament_(Nigeria), Make_a_visit, ?)
+  IDs: (2132, 4, ?)
+
+Ground Truth:
+  Angola (ID: 66)
+
+Model Prediction:
+  Top-1: Government_(Nigeria) (ID: 9)
+  Rank of true answer: 17
+  Prediction score: -2.001180
+  Correct: ✗ NO
+
+Example 16:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 335:
+  (Extremist_(Somalia), Use_conventional_military_force, ?)
+  IDs: (4469, 11, ?)
+
+Ground Truth:
+  Employee_(Kenya) (ID: 690)
+
+Model Prediction:
+  Top-1: Al-Shabaab (ID: 104)
+  Rank of true answer: 110
+  Prediction score: -0.962694
+  Correct: ✗ NO
+
+Example 17:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 335:
+  (Angola, Host_a_visit, ?)
+  IDs: (66, 5, ?)
+
+Ground Truth:
+  Member_of_Parliament_(Nigeria) (ID: 2132)
+
+Model Prediction:
+  Top-1: Sergey_Viktorovich_Lavrov (ID: 12)
+  Rank of true answer: 17
+  Prediction score: -3.466971
+  Correct: ✗ NO
+
+Example 18:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 335:
+  (Lapo_Pistelli, Host_a_visit, ?)
+  IDs: (1583, 5, ?)
+
+Ground Truth:
+  Majid_Takht_Ravanchi (ID: 248)
+
+Model Prediction:
+  Top-1: William_Ruto (ID: 115)
+  Rank of true answer: 17
+  Prediction score: -1.066555
+  Correct: ✗ NO
+
+Example 19:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 335:
+  (Eritrea, Engage_in_negotiation, ?)
+  IDs: (722, 12, ?)
+
+Ground Truth:
+  Federica_Mogherini (ID: 178)
+
+Model Prediction:
+  Top-1: Eritrea (ID: 722)
+  Rank of true answer: 10
+  Prediction score: -0.932529
+  Correct: ✗ NO
+
+Example 20:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 335:
+  (Education_(United_States), Host_a_visit, ?)
+  IDs: (1229, 5, ?)
+
+Ground Truth:
+  Stephen_Hadley (ID: 2183)
+
+Model Prediction:
+  Top-1: Stephen_Hadley (ID: 2183)
+  Rank of true answer: 1
+  Prediction score: -1.645464
+  Correct: ✓ YES
+
+Example 21:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 335:
+  (Children_(Zimbabwe), Demonstrate_or_rally, ?)
+  IDs: (1777, 24, ?)
+
+Ground Truth:
+  Ministry_(Zimbabwe) (ID: 921)
+
+Model Prediction:
+  Top-1: Didmus_Noel_Edwin_Mutasa (ID: 1667)
+  Rank of true answer: 2
+  Prediction score: -0.828503
+  Correct: ✗ NO
+
+Example 22:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 335:
+  (Businessperson_(United_States), Make_statement, ?)
+  IDs: (1131, 0, ?)
+
+Ground Truth:
+  Environment_Agency (ID: 2262)
+
+Model Prediction:
+  Top-1: China (ID: 0)
+  Rank of true answer: 1161
+  Prediction score: -2.768018
+  Correct: ✗ NO
+
+Example 23:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 335:
+  (Military_(Lebanon), Use_conventional_military_force, ?)
+  IDs: (82, 11, ?)
+
+Ground Truth:
+  Islamic_Militant_(Syria) (ID: 1513)
+
+Model Prediction:
+  Top-1: Armed_Gang_(Syria) (ID: 736)
+  Rank of true answer: 5
+  Prediction score: -0.775869
+  Correct: ✗ NO
+
+Example 24:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 335:
+  (Government_(France), Praise_or_endorse, ?)
+  IDs: (262, 7, ?)
+
+Ground Truth:
+  Botswana (ID: 687)
+
+Model Prediction:
+  Top-1: François_Hollande (ID: 27)
+  Rank of true answer: 930
+  Prediction score: -0.751631
+  Correct: ✗ NO
+
+Example 25:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 335:
+  (Islamic_Militant_(Syria), Use_unconventional_violence, ?)
+  IDs: (1513, 10, ?)
+
+Ground Truth:
+  Military_(Lebanon) (ID: 82)
+
+Model Prediction:
+  Top-1: Citizen_(Australia) (ID: 17)
+  Rank of true answer: 13
+  Prediction score: -1.672432
+  Correct: ✗ NO
+
+Example 26:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 335:
+  (Cleric_(Nigeria), Provide_aid, ?)
+  IDs: (708, 40, ?)
+
+Ground Truth:
+  Secretariat_(All_Progressives_Congress) (ID: 3431)
+
+Model Prediction:
+  Top-1: Citizen_(Nigeria) (ID: 2)
+  Rank of true answer: 115
+  Prediction score: -0.319074
+  Correct: ✗ NO
+
+Example 27:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 335:
+  (Majid_Takht_Ravanchi, Make_a_visit, ?)
+  IDs: (248, 4, ?)
+
+Ground Truth:
+  Lapo_Pistelli (ID: 1583)
+
+Model Prediction:
+  Top-1: Iran (ID: 1)
+  Rank of true answer: 25
+  Prediction score: -0.167141
+  Correct: ✗ NO
+
+Example 28:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 335:
+  (Yesh_Atid, Accuse, ?)
+  IDs: (4102, 9, ?)
+
+Ground Truth:
+  Benjamin_Netanyahu (ID: 22)
+
+Model Prediction:
+  Top-1: Benjamin_Netanyahu (ID: 22)
+  Rank of true answer: 1
+  Prediction score: -0.799567
+  Correct: ✓ YES
+
+Example 29:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 335:
+  (Federica_Mogherini, Engage_in_negotiation, ?)
+  IDs: (178, 12, ?)
+
+Ground Truth:
+  Eritrea (ID: 722)
+
+Model Prediction:
+  Top-1: Sergey_Viktorovich_Lavrov (ID: 12)
+  Rank of true answer: 18
+  Prediction score: -1.154735
+  Correct: ✗ NO
+
+Example 30:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 336:
+  (Majid_Takht_Ravanchi, Consult, ?)
+  IDs: (248, 1, ?)
+
+Ground Truth:
+  Lapo_Pistelli (ID: 1583)
+
+Model Prediction:
+  Top-1: Lapo_Pistelli (ID: 1583)
+  Rank of true answer: 1
+  Prediction score: -1.212692
+  Correct: ✓ YES
+
+Example 31:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 336:
+  (Joao_Lourenco, Consult, ?)
+  IDs: (760, 1, ?)
+
+Ground Truth:
+  Roberta_Pinotti (ID: 2949)
+
+Model Prediction:
+  Top-1: Lawyer/Attorney_(Dominican_Republic) (ID: 2541)
+  Rank of true answer: 67
+  Prediction score: -1.831668
+  Correct: ✗ NO
+
+Example 32:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 336:
+  (Terry_McAuliffe, Make_statement, ?)
+  IDs: (1408, 0, ?)
+
+Ground Truth:
+  Business_(Canada) (ID: 311)
+
+Model Prediction:
+  Top-1: China (ID: 0)
+  Rank of true answer: 492
+  Prediction score: -0.186396
+  Correct: ✗ NO
+
+Example 33:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 336:
+  (Jens_Stoltenberg, Express_intent_to_cooperate, ?)
+  IDs: (258, 13, ?)
+
+Ground Truth:
+  Haider_Al-Abadi (ID: 77)
+
+Model Prediction:
+  Top-1: North_Atlantic_Treaty_Organization (ID: 24)
+  Rank of true answer: 46
+  Prediction score: -0.666972
+  Correct: ✗ NO
+
+Example 34:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 336:
+  (Justice_Department/Ministery_(France), Make_statement, ?)
+  IDs: (3246, 0, ?)
+
+Ground Truth:
+  Other_Authorities_/_Officials_(China) (ID: 157)
+
+Model Prediction:
+  Top-1: Government_(France) (ID: 262)
+  Rank of true answer: 928
+  Prediction score: -1.658416
+  Correct: ✗ NO
+
+Example 35:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 336:
+  (Jens_Stoltenberg, Meet_at_a_'third'_location, ?)
+  IDs: (258, 27, ?)
+
+Ground Truth:
+  Haider_Al-Abadi (ID: 77)
+
+Model Prediction:
+  Top-1: North_Atlantic_Treaty_Organization (ID: 24)
+  Rank of true answer: 7
+  Prediction score: -0.969021
+  Correct: ✗ NO
+
+Example 36:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 336:
+  (Roberta_Pinotti, Consult, ?)
+  IDs: (2949, 1, ?)
+
+Ground Truth:
+  Joao_Lourenco (ID: 760)
+
+Model Prediction:
+  Top-1: Nabih_Berri (ID: 245)
+  Rank of true answer: 62
+  Prediction score: -0.568123
+  Correct: ✗ NO
+
+Example 37:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 336:
+  (Islamic_Militant_(Syria), Use_unconventional_violence, ?)
+  IDs: (1513, 10, ?)
+
+Ground Truth:
+  Military_(Lebanon) (ID: 82)
+
+Model Prediction:
+  Top-1: Military_(Lebanon) (ID: 82)
+  Rank of true answer: 1
+  Prediction score: -1.204692
+  Correct: ✓ YES
+
+Example 38:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 336:
+  (Haider_Al-Abadi, Meet_at_a_'third'_location, ?)
+  IDs: (77, 27, ?)
+
+Ground Truth:
+  Jens_Stoltenberg (ID: 258)
+
+Model Prediction:
+  Top-1: Haider_Al-Abadi (ID: 77)
+  Rank of true answer: 6
+  Prediction score: -1.436544
+  Correct: ✗ NO
+
+Example 39:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 336:
+  (Tajikistan, Confiscate_property, ?)
+  IDs: (69, 44, ?)
+
+Ground Truth:
+  Criminal_(Kyrgyzstan) (ID: 2733)
+
+Model Prediction:
+  Top-1: Iran (ID: 1)
+  Rank of true answer: 622
+  Prediction score: -0.462060
+  Correct: ✗ NO
+
+Example 40:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 336:
+  (UN_Security_Council, Consult, ?)
+  IDs: (25, 1, ?)
+
+Ground Truth:
+  Defense_/_Security_Ministry_(Slovakia) (ID: 1565)
+
+Model Prediction:
+  Top-1: Sergey_Viktorovich_Lavrov (ID: 12)
+  Rank of true answer: 9
+  Prediction score: -1.680785
+  Correct: ✗ NO
+
+Example 41:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 336:
+  (Rand_Paul, Make_statement, ?)
+  IDs: (2938, 0, ?)
+
+Ground Truth:
+  Iraq (ID: 8)
+
+Model Prediction:
+  Top-1: Government_(Mexico) (ID: 415)
+  Rank of true answer: 68
+  Prediction score: -2.385949
+  Correct: ✗ NO
+
+Example 42:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 336:
+  (Al-Azhar_University, Criticize_or_denounce, ?)
+  IDs: (2406, 8, ?)
+
+Ground Truth:
+  Terrorist_Leader_(Syria) (ID: 903)
+
+Model Prediction:
+  Top-1: Police_(Egypt) (ID: 64)
+  Rank of true answer: 3302
+  Prediction score: -1.956960
+  Correct: ✗ NO
+
+Example 43:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 336:
+  (Military_(Lebanon), Use_conventional_military_force, ?)
+  IDs: (82, 11, ?)
+
+Ground Truth:
+  Islamic_Militant_(Syria) (ID: 1513)
+
+Model Prediction:
+  Top-1: Armed_Gang_(Syria) (ID: 736)
+  Rank of true answer: 2
+  Prediction score: -0.629192
+  Correct: ✗ NO
+
+Example 44:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 336:
+  (Defense_/_Security_Ministry_(Slovakia), Consult, ?)
+  IDs: (1565, 1, ?)
+
+Ground Truth:
+  UN_Security_Council (ID: 25)
+
+Model Prediction:
+  Top-1: Foreign_Affairs_(United_States) (ID: 39)
+  Rank of true answer: 20
+  Prediction score: -1.682651
+  Correct: ✗ NO
+
+Example 45:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 336:
+  (Lapo_Pistelli, Consult, ?)
+  IDs: (1583, 1, ?)
+
+Ground Truth:
+  Majid_Takht_Ravanchi (ID: 248)
+
+Model Prediction:
+  Top-1: UN_Security_Council (ID: 25)
+  Rank of true answer: 2
+  Prediction score: -1.205296
+  Correct: ✗ NO
+
+Example 46:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 337:
+  (Transport_Canada, Make_statement, ?)
+  IDs: (4073, 0, ?)
+
+Ground Truth:
+  Regulator_(Canada) (ID: 2170)
+
+Model Prediction:
+  Top-1: Canada (ID: 34)
+  Rank of true answer: 40
+  Prediction score: -0.704275
+  Correct: ✗ NO
+
+Example 47:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 337:
+  (Head_of_Government_(Bulgaria), Consult, ?)
+  IDs: (681, 1, ?)
+
+Ground Truth:
+  Elmar_Brok (ID: 1363)
+
+Model Prediction:
+  Top-1: Foreign_Affairs_(Georgia) (ID: 619)
+  Rank of true answer: 7
+  Prediction score: -1.037618
+  Correct: ✗ NO
+
+Example 48:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 337:
+  (Ministry_(Tanzania), Consult, ?)
+  IDs: (486, 1, ?)
+
+Ground Truth:
+  Umar_al_Bashir (ID: 145)
+
+Model Prediction:
+  Top-1: Ministry_(Tanzania) (ID: 486)
+  Rank of true answer: 78
+  Prediction score: -0.146681
+  Correct: ✗ NO
+
+Example 49:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 337:
+  (Joseph_Katema, Make_statement, ?)
+  IDs: (1514, 0, ?)
+
+Ground Truth:
+  Zambia_National_Broadcasting_Corporation (ID: 4107)
+
+Model Prediction:
+  Top-1: Media_(Zambia) (ID: 2853)
+  Rank of true answer: 135
+  Prediction score: -1.691384
+  Correct: ✗ NO
+
+Example 50:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 337:
+  (Alexis_Tsipras, Express_intent_to_meet_or_negotiate, ?)
+  IDs: (271, 3, ?)
+
+Ground Truth:
+  Tomislav_Nikolić (ID: 556)
+
+Model Prediction:
+  Top-1: Evangelos_Venizelos (ID: 131)
+  Rank of true answer: 1390
+  Prediction score: -0.726571
+  Correct: ✗ NO
+
+
+====================================================================================================
+4+HOP QUERIES (Total: 50)
+====================================================================================================
+
+Example 1:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Police_(United_States), Make_statement, ?)
+  IDs: (170, 0, ?)
+
+Ground Truth:
+  David_Miller (ID: 4369)
+
+Model Prediction:
+  Top-1: Mazda (ID: 2558)
+  Rank of true answer: 5815
+  Prediction score: -2.618845
+  Correct: ✗ NO
+
+Example 2:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (James_Ongwae, Consult, ?)
+  IDs: (1058, 1, ?)
+
+Ground Truth:
+  Government_(Poland) (ID: 1366)
+
+Model Prediction:
+  Top-1: Indigenous_People_(Somalia) (ID: 1137)
+  Rank of true answer: 18
+  Prediction score: -1.138469
+  Correct: ✗ NO
+
+Example 3:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 334:
+  (Government_(Poland), Consult, ?)
+  IDs: (1366, 1, ?)
+
+Ground Truth:
+  James_Ongwae (ID: 1058)
+
+Model Prediction:
+  Top-1: Protester_(Hong_Kong) (ID: 91)
+  Rank of true answer: 39
+  Prediction score: -2.151404
+  Correct: ✗ NO
+
+Example 4:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 335:
+  (Lawyer/Attorney_(Dominican_Republic), Praise_or_endorse, ?)
+  IDs: (2541, 7, ?)
+
+Ground Truth:
+  Holy_See (ID: 1510)
+
+Model Prediction:
+  Top-1: Police_(Dominican_Republic) (ID: 1993)
+  Rank of true answer: 2668
+  Prediction score: -1.368528
+  Correct: ✗ NO
+
+Example 5:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 335:
+  (Children_(Zimbabwe), Demonstrate_or_rally, ?)
+  IDs: (1777, 24, ?)
+
+Ground Truth:
+  Ministry_of_Mining_(Zimbabwe) (ID: 3894)
+
+Model Prediction:
+  Top-1: Didmus_Noel_Edwin_Mutasa (ID: 1667)
+  Rank of true answer: 190
+  Prediction score: -0.828503
+  Correct: ✗ NO
+
+Example 6:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 335:
+  (Police_(United_States), Investigate, ?)
+  IDs: (170, 18, ?)
+
+Ground Truth:
+  Citizen_(Mauritius) (ID: 1281)
+
+Model Prediction:
+  Top-1: Canada (ID: 34)
+  Rank of true answer: 450
+  Prediction score: -2.614381
+  Correct: ✗ NO
+
+Example 7:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 336:
+  (Shivraj_Singh_Chouhan, Consult, ?)
+  IDs: (531, 1, ?)
+
+Ground Truth:
+  Representatives_(Non-Governmental_Organizations) (ID: 3406)
+
+Model Prediction:
+  Top-1: Representatives_(Non-Governmental_Organizations) (ID: 3406)
+  Rank of true answer: 1
+  Prediction score: -1.041162
+  Correct: ✓ YES
+
+Example 8:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 336:
+  (Lawyer/Attorney_(Dominican_Republic), Consult, ?)
+  IDs: (2541, 1, ?)
+
+Ground Truth:
+  Pope_Francis (ID: 75)
+
+Model Prediction:
+  Top-1: Business_(Belgium) (ID: 1484)
+  Rank of true answer: 9
+  Prediction score: -0.756619
+  Correct: ✗ NO
+
+Example 9:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 336:
+  (Representatives_(Non-Governmental_Organizations), Consult, ?)
+  IDs: (3406, 1, ?)
+
+Ground Truth:
+  Shivraj_Singh_Chouhan (ID: 531)
+
+Model Prediction:
+  Top-1: Daniel_Mitov (ID: 738)
+  Rank of true answer: 2
+  Prediction score: -1.615979
+  Correct: ✗ NO
+
+Example 10:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 336:
+  (Pope_Francis, Consult, ?)
+  IDs: (75, 1, ?)
+
+Ground Truth:
+  Lawyer/Attorney_(Dominican_Republic) (ID: 2541)
+
+Model Prediction:
+  Top-1: Middle_East (ID: 63)
+  Rank of true answer: 5
+  Prediction score: -1.194849
+  Correct: ✗ NO
+
+Example 11:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 337:
+  (Bernadette_Meehan, Make_statement, ?)
+  IDs: (4233, 0, ?)
+
+Ground Truth:
+  Gambia (ID: 518)
+
+Model Prediction:
+  Top-1: Iraq (ID: 8)
+  Rank of true answer: 533
+  Prediction score: -3.685628
+  Correct: ✗ NO
+
+Example 12:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 338:
+  (Rose_Gottemoeller, Consult, ?)
+  IDs: (3420, 1, ?)
+
+Ground Truth:
+  Chief_of_Staff_(Ukraine) (ID: 2712)
+
+Model Prediction:
+  Top-1: Japan (ID: 5)
+  Rank of true answer: 4
+  Prediction score: -0.952094
+  Correct: ✗ NO
+
+Example 13:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 338:
+  (Chief_of_Staff_(Ukraine), Consult, ?)
+  IDs: (2712, 1, ?)
+
+Ground Truth:
+  Rose_Gottemoeller (ID: 3420)
+
+Model Prediction:
+  Top-1: Evangelos_Venizelos (ID: 131)
+  Rank of true answer: 14
+  Prediction score: -1.792125
+  Correct: ✗ NO
+
+Example 14:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 338:
+  (Armed_Band_(Lebanon), Make_an_appeal_or_request, ?)
+  IDs: (1220, 2, ?)
+
+Ground Truth:
+  Employee_(Lebanon) (ID: 2476)
+
+Model Prediction:
+  Top-1: Military_(Lebanon) (ID: 82)
+  Rank of true answer: 10
+  Prediction score: -0.511093
+  Correct: ✗ NO
+
+Example 15:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 339:
+  (Military_Personnel_-_Special_(United_States), Use_conventional_military_force, ?)
+  IDs: (1065, 11, ?)
+
+Ground Truth:
+  Pierre_Korkie (ID: 1837)
+
+Model Prediction:
+  Top-1: Al-Shabaab (ID: 104)
+  Rank of true answer: 2797
+  Prediction score: -2.051759
+  Correct: ✗ NO
+
+Example 16:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 339:
+  (Barack_Obama, Criticize_or_denounce, ?)
+  IDs: (4, 8, ?)
+
+Ground Truth:
+  Militant_(Al_Qaeda_in_the_Arabian_Peninsula) (ID: 3299)
+
+Model Prediction:
+  Top-1: Iraq (ID: 8)
+  Rank of true answer: 4976
+  Prediction score: -1.839984
+  Correct: ✗ NO
+
+Example 17:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 340:
+  (Ministry_(Belarus), Make_statement, ?)
+  IDs: (3315, 0, ?)
+
+Ground Truth:
+  Business_(Belarus) (ID: 3077)
+
+Model Prediction:
+  Top-1: Government_(Belarus) (ID: 1933)
+  Rank of true answer: 3
+  Prediction score: -1.798061
+  Correct: ✗ NO
+
+Example 18:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 340:
+  (Government_(Ecuador), Impose_restrictions_on_political_freedoms, ?)
+  IDs: (1935, 79, ?)
+
+Ground Truth:
+  Member_of_Parliament_(Germany) (ID: 1967)
+
+Model Prediction:
+  Top-1: Rafael_Correa (ID: 631)
+  Rank of true answer: 3934
+  Prediction score: -0.781563
+  Correct: ✗ NO
+
+Example 19:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 340:
+  (Military_(Jordan), Praise_or_endorse, ?)
+  IDs: (1197, 7, ?)
+
+Ground Truth:
+  Terrorist_Organization_(Syria) (ID: 3459)
+
+Model Prediction:
+  Top-1: Ministry_(Jordan) (ID: 594)
+  Rank of true answer: 3009
+  Prediction score: -2.932096
+  Correct: ✗ NO
+
+Example 20:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 341:
+  (Military_Personnel_-_Special_(India), Make_statement, ?)
+  IDs: (225, 0, ?)
+
+Ground Truth:
+  Central_Security_Forces (ID: 3087)
+
+Model Prediction:
+  Top-1: Employee_(India) (ID: 56)
+  Rank of true answer: 4076
+  Prediction score: -1.994002
+  Correct: ✗ NO
+
+Example 21:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 341:
+  (Ministry_of_Health, Express_intent_to_meet_or_negotiate, ?)
+  IDs: (2880, 3, ?)
+
+Ground Truth:
+  Citizen_(Bulgaria) (ID: 438)
+
+Model Prediction:
+  Top-1: Citizen_(Bulgaria) (ID: 438)
+  Rank of true answer: 1
+  Prediction score: -1.245922
+  Correct: ✓ YES
+
+Example 22:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 341:
+  (Police_(Jordan), Make_statement, ?)
+  IDs: (823, 0, ?)
+
+Ground Truth:
+  Member_of_Legislative_(Govt)_(Jordan) (ID: 4784)
+
+Model Prediction:
+  Top-1: Ministry_(Jordan) (ID: 594)
+  Rank of true answer: 688
+  Prediction score: -1.978075
+  Correct: ✗ NO
+
+Example 23:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 342:
+  (Amnesty_International, Criticize_or_denounce, ?)
+  IDs: (152, 8, ?)
+
+Ground Truth:
+  Domestic_Affairs_(Algeria) (ID: 2748)
+
+Model Prediction:
+  Top-1: China (ID: 0)
+  Rank of true answer: 2352
+  Prediction score: -2.636926
+  Correct: ✗ NO
+
+Example 24:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 343:
+  (Activist_(Cuba), Engage_in_symbolic_act, ?)
+  IDs: (2670, 28, ?)
+
+Ground Truth:
+  Raúl_Castro (ID: 261)
+
+Model Prediction:
+  Top-1: Serge_Lazarevic (ID: 1008)
+  Rank of true answer: 54
+  Prediction score: -3.282703
+  Correct: ✗ NO
+
+Example 25:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 343:
+  (Intelligence_and_Security_Committee, Investigate, ?)
+  IDs: (3229, 18, ?)
+
+Ground Truth:
+  Senate_(United_Kingdom) (ID: 5137)
+
+Model Prediction:
+  Top-1: Citizen_(United_Kingdom) (ID: 55)
+  Rank of true answer: 64
+  Prediction score: -0.917840
+  Correct: ✗ NO
+
+Example 26:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 344:
+  (Military_Personnel_-_Special_(United_States), Use_conventional_military_force, ?)
+  IDs: (1065, 11, ?)
+
+Ground Truth:
+  Pierre_Korkie (ID: 1837)
+
+Model Prediction:
+  Top-1: Al-Shabaab (ID: 104)
+  Rank of true answer: 234
+  Prediction score: -1.658518
+  Correct: ✗ NO
+
+Example 27:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 347:
+  (John_Major, Make_statement, ?)
+  IDs: (4663, 0, ?)
+
+Ground Truth:
+  Intelligence_and_Security_Committee (ID: 3229)
+
+Model Prediction:
+  Top-1: Alex_Salmond (ID: 507)
+  Rank of true answer: 286
+  Prediction score: -1.359452
+  Correct: ✗ NO
+
+Example 28:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 347:
+  (France, Use_conventional_military_force, ?)
+  IDs: (10, 11, ?)
+
+Ground Truth:
+  Insurgent_(Algeria) (ID: 4618)
+
+Model Prediction:
+  Top-1: Armed_Rebel_(Syria) (ID: 117)
+  Rank of true answer: 1185
+  Prediction score: -1.967324
+  Correct: ✗ NO
+
+Example 29:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 348:
+  (Office_of_the_United_Nations_High_Commissioner_for_Human_Rights, Rally_opposition_against, ?)
+  IDs: (595, 70, ?)
+
+Ground Truth:
+  Congress_(Brazil) (ID: 1781)
+
+Model Prediction:
+  Top-1: Citizen_(Yemen) (ID: 78)
+  Rank of true answer: 2340
+  Prediction score: -1.783026
+  Correct: ✗ NO
+
+Example 30:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 348:
+  (Government_(Kenya), Sign_formal_agreement, ?)
+  IDs: (36, 17, ?)
+
+Ground Truth:
+  Company_-_Owner_or_Operator_(Netherlands) (ID: 3596)
+
+Model Prediction:
+  Top-1: Government_(Kenya) (ID: 36)
+  Rank of true answer: 2
+  Prediction score: -0.700167
+  Correct: ✗ NO
+
+Example 31:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 348:
+  (Company_-_Owner_or_Operator_(Netherlands), Sign_formal_agreement, ?)
+  IDs: (3596, 17, ?)
+
+Ground Truth:
+  Government_(Kenya) (ID: 36)
+
+Model Prediction:
+  Top-1: Head_of_Government_(Afghanistan) (ID: 161)
+  Rank of true answer: 3
+  Prediction score: -1.778908
+  Correct: ✗ NO
+
+Example 32:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 348:
+  (Yukos, Consult, ?)
+  IDs: (4106, 1, ?)
+
+Ground Truth:
+  Yabloko (ID: 4100)
+
+Model Prediction:
+  Top-1: Mevlut_Cavusoglu (ID: 303)
+  Rank of true answer: 2
+  Prediction score: -1.262545
+  Correct: ✗ NO
+
+Example 33:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 348:
+  (Yabloko, Consult, ?)
+  IDs: (4100, 1, ?)
+
+Ground Truth:
+  Yukos (ID: 4106)
+
+Model Prediction:
+  Top-1: Sunday_Times (ID: 1756)
+  Rank of true answer: 3
+  Prediction score: -1.928644
+  Correct: ✗ NO
+
+Example 34:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 348:
+  (Constitutional_Court_(Albania), Reject, ?)
+  IDs: (4342, 20, ?)
+
+Ground Truth:
+  Democratic_Party (ID: 709)
+
+Model Prediction:
+  Top-1: Constitutional_Court_(Albania) (ID: 4342)
+  Rank of true answer: 4948
+  Prediction score: -2.172814
+  Correct: ✗ NO
+
+Example 35:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 349:
+  (Terrorist_(Taliban), Use_unconventional_violence, ?)
+  IDs: (2981, 10, ?)
+
+Ground Truth:
+  Education_(Pakistan) (ID: 588)
+
+Model Prediction:
+  Top-1: Afghanistan (ID: 15)
+  Rank of true answer: 84
+  Prediction score: -1.026261
+  Correct: ✗ NO
+
+Example 36:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 349:
+  (Amnesty_International, Make_an_appeal_or_request, ?)
+  IDs: (152, 2, ?)
+
+Ground Truth:
+  Party_Member_(Sri_Lanka) (ID: 1990)
+
+Model Prediction:
+  Top-1: Other_Authorities_/_Officials_(Egypt) (ID: 233)
+  Rank of true answer: 3352
+  Prediction score: -2.815676
+  Correct: ✗ NO
+
+Example 37:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 350:
+  (Congress_of_South_African_Trade_Unions, Criticize_or_denounce, ?)
+  IDs: (941, 8, ?)
+
+Ground Truth:
+  Education_(Pakistan) (ID: 588)
+
+Model Prediction:
+  Top-1: Government_(South_Africa) (ID: 223)
+  Rank of true answer: 6354
+  Prediction score: -1.347334
+  Correct: ✗ NO
+
+Example 38:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 350:
+  (Kahinda_Otafiire, Criticize_or_denounce, ?)
+  IDs: (4685, 8, ?)
+
+Ground Truth:
+  National_Resistance_Movement (ID: 1724)
+
+Model Prediction:
+  Top-1: China (ID: 0)
+  Rank of true answer: 6278
+  Prediction score: -1.334638
+  Correct: ✗ NO
+
+Example 39:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 350:
+  (Head_of_Government_(Mozambique), Praise_or_endorse, ?)
+  IDs: (2795, 7, ?)
+
+Ground Truth:
+  Sahrawi_people (ID: 1336)
+
+Model Prediction:
+  Top-1: Michael_Sata (ID: 234)
+  Rank of true answer: 3850
+  Prediction score: -2.791432
+  Correct: ✗ NO
+
+Example 40:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 351:
+  (Activist_(Belarus), Make_statement, ?)
+  IDs: (3018, 0, ?)
+
+Ground Truth:
+  Government_(Belarus) (ID: 1933)
+
+Model Prediction:
+  Top-1: Party_Member_(Belarus) (ID: 1987)
+  Rank of true answer: 4
+  Prediction score: -2.499848
+  Correct: ✗ NO
+
+Example 41:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 351:
+  (Terrorist_(Taliban), Use_unconventional_violence, ?)
+  IDs: (2981, 10, ?)
+
+Ground Truth:
+  Education_(Pakistan) (ID: 588)
+
+Model Prediction:
+  Top-1: Afghanistan (ID: 15)
+  Rank of true answer: 2
+  Prediction score: -1.457259
+  Correct: ✗ NO
+
+Example 42:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 351:
+  (Cabinet_/_Council_of_Ministers_/_Advisors_(Jordan), Investigate, ?)
+  IDs: (1556, 18, ?)
+
+Ground Truth:
+  Children_(Jordan) (ID: 4293)
+
+Model Prediction:
+  Top-1: Police_(Jordan) (ID: 823)
+  Rank of true answer: 23
+  Prediction score: -1.723429
+  Correct: ✗ NO
+
+Example 43:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 352:
+  (Greenpeace, Make_statement, ?)
+  IDs: (1185, 0, ?)
+
+Ground Truth:
+  Lawyer/Attorney_(Peru) (ID: 1245)
+
+Model Prediction:
+  Top-1: Greenpeace (ID: 1185)
+  Rank of true answer: 4431
+  Prediction score: -2.802701
+  Correct: ✗ NO
+
+Example 44:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 352:
+  (Lawyer/Attorney_(Peru), Investigate, ?)
+  IDs: (1245, 18, ?)
+
+Ground Truth:
+  Greenpeace (ID: 1185)
+
+Model Prediction:
+  Top-1: Head_of_Government_(Peru) (ID: 914)
+  Rank of true answer: 2807
+  Prediction score: -2.081592
+  Correct: ✗ NO
+
+Example 45:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 353:
+  (Xi_Jinping, Make_an_appeal_or_request, ?)
+  IDs: (13, 2, ?)
+
+Ground Truth:
+  Citizen_(Macao) (ID: 3097)
+
+Model Prediction:
+  Top-1: Military_(China) (ID: 229)
+  Rank of true answer: 2278
+  Prediction score: -1.167163
+  Correct: ✗ NO
+
+Example 46:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 353:
+  (Terrorist_(Taliban), Use_unconventional_violence, ?)
+  IDs: (2981, 10, ?)
+
+Ground Truth:
+  Education_(Pakistan) (ID: 588)
+
+Model Prediction:
+  Top-1: Education_(Pakistan) (ID: 588)
+  Rank of true answer: 1
+  Prediction score: -0.734968
+  Correct: ✓ YES
+
+Example 47:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 355:
+  (Ali_Bongo_Ondimba, Make_an_appeal_or_request, ?)
+  IDs: (1347, 2, ?)
+
+Ground Truth:
+  Government_(Gabon) (ID: 3706)
+
+Model Prediction:
+  Top-1: France (ID: 10)
+  Rank of true answer: 5586
+  Prediction score: -1.512783
+  Correct: ✗ NO
+
+Example 48:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 355:
+  (Military_Personnel_(Liberia), Make_statement, ?)
+  IDs: (2581, 0, ?)
+
+Ground Truth:
+  Media_(Liberia) (ID: 2126)
+
+Model Prediction:
+  Top-1: Drug_Enforcement_(Liberia) (ID: 3641)
+  Rank of true answer: 3
+  Prediction score: -1.948663
+  Correct: ✗ NO
+
+Example 49:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 356:
+  (Police_(Dominican_Republic), Reject, ?)
+  IDs: (1993, 20, ?)
+
+Ground Truth:
+  Poland (ID: 73)
+
+Model Prediction:
+  Top-1: Criminal_(Dominican_Republic) (ID: 2460)
+  Rank of true answer: 153
+  Prediction score: -1.615547
+  Correct: ✗ NO
+
+Example 50:
+----------------------------------------------------------------------------------------------------
+Query at timestamp 357:
+  (Head_of_Government_(Senegal), Express_intent_to_meet_or_negotiate, ?)
+  IDs: (757, 3, ?)
+
+Ground Truth:
+  Legislature_(Senegal) (ID: 3818)
+
+Model Prediction:
+  Top-1: Macky_Sall (ID: 264)
+  Rank of true answer: 21
+  Prediction score: -0.663440
+  Correct: ✗ NO
+

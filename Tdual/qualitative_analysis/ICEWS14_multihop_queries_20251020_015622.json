@@ -1,0 +1,4641 @@
+{
+  "dataset": "ICEWS14",
+  "model_config": "{'gpu': 0, 'batch_size': 1, 'dataset': 'ICEWS14', 'test': False, 'run_analysis': False, 'multi_step': False, 'topk': 10, 'enable_multihop_analysis': True, 'enable_qualitative_recording': True, 'add_static_graph': True, 'pre_type': 'all', 'use_cl': True, 'temperature': 0.03, 'use_dual_stream': True, 'edge_sampling_ratio': 1, 'label_smoothing': 0.03, 'dropedge_rate': 0.1, 'use_adaptive_loss': False, 'use_augmentation': True, 'aug_prob': 0.05, 'shuffle_train': True, 'early_stop_patience': 4, 'weight_decay': 5e-06, 'relation_weight': 0.1, 'encoder': 'uvrgcn', 'opn': 'sub', 'n_hidden': 200, 'n_layers': 2, 'n_bases': 100, 'n_basis': 100, 'dropout': 0.2, 'self_loop': True, 'skip_connect': False, 'layer_norm': True, 'decoder': 'convtranse', 'input_dropout': 0.2, 'hidden_dropout': 0.2, 'feat_dropout': 0.2, 'weight': 0.5, 'pre_weight': 0.9, 'discount': 1, 'angle': 10, 'entity_prediction': True, 'relation_prediction': True, 'relation_evaluation': False, 'aggregation': 'none', 'n_epochs': 500, 'lr': 0.001, 'grad_norm': 1.0, 'evaluate_every': 1, 'train_history_len': 7, 'test_history_len': 7}",
+  "timestamp": "20251020_015622",
+  "query_records": {
+    "1-hop": [
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 30,
+          "head_name": "Malaysia",
+          "relation_id": 13,
+          "relation_name": "Express_intent_to_cooperate",
+          "tail_id": 18,
+          "tail_name": "Thailand"
+        },
+        "prediction": {
+          "predicted_entity_id": 18,
+          "predicted_entity_name": "Thailand",
+          "rank": 1,
+          "score": -0.5844253301620483
+        },
+        "ground_truth": {
+          "true_entity_id": 18,
+          "true_entity_name": "Thailand"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 77,
+          "head_name": "Haider_Al-Abadi",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 8,
+          "tail_name": "Iraq"
+        },
+        "prediction": {
+          "predicted_entity_id": 8,
+          "predicted_entity_name": "Iraq",
+          "rank": 1,
+          "score": -1.0090826749801636
+        },
+        "ground_truth": {
+          "true_entity_id": 8,
+          "true_entity_name": "Iraq"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 44,
+          "head_name": "Court_Judge_(India)",
+          "relation_id": 2,
+          "relation_name": "Make_an_appeal_or_request",
+          "tail_id": 3,
+          "tail_name": "Citizen_(India)"
+        },
+        "prediction": {
+          "predicted_entity_id": 3,
+          "predicted_entity_name": "Citizen_(India)",
+          "rank": 1,
+          "score": -0.18309499323368073
+        },
+        "ground_truth": {
+          "true_entity_id": 3,
+          "true_entity_name": "Citizen_(India)"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 271,
+          "head_name": "Alexis_Tsipras",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 131,
+          "tail_name": "Evangelos_Venizelos"
+        },
+        "prediction": {
+          "predicted_entity_id": 72,
+          "predicted_entity_name": "Antonis_Samaras",
+          "rank": 4,
+          "score": -1.000016689300537
+        },
+        "ground_truth": {
+          "true_entity_id": 131,
+          "true_entity_name": "Evangelos_Venizelos"
+        },
+        "is_correct": false,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 9,
+          "head_name": "Government_(Nigeria)",
+          "relation_id": 11,
+          "relation_name": "Use_conventional_military_force",
+          "tail_id": 28,
+          "tail_name": "Boko_Haram"
+        },
+        "prediction": {
+          "predicted_entity_id": 2,
+          "predicted_entity_name": "Citizen_(Nigeria)",
+          "rank": 2,
+          "score": -0.43930909037590027
+        },
+        "ground_truth": {
+          "true_entity_id": 28,
+          "true_entity_name": "Boko_Haram"
+        },
+        "is_correct": false,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 53,
+          "head_name": "Hamas",
+          "relation_id": 8,
+          "relation_name": "Criticize_or_denounce",
+          "tail_id": 347,
+          "tail_name": "Head_of_Government_(Palestinian_Territory,_Occupied)"
+        },
+        "prediction": {
+          "predicted_entity_id": 287,
+          "predicted_entity_name": "Government_(Palestinian_Territory,_Occupied)",
+          "rank": 19,
+          "score": -1.526024341583252
+        },
+        "ground_truth": {
+          "true_entity_id": 347,
+          "true_entity_name": "Head_of_Government_(Palestinian_Territory,_Occupied)"
+        },
+        "is_correct": false,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 32,
+          "head_name": "Police_(Kenya)",
+          "relation_id": 2,
+          "relation_name": "Make_an_appeal_or_request",
+          "tail_id": 16,
+          "tail_name": "Citizen_(Kenya)"
+        },
+        "prediction": {
+          "predicted_entity_id": 16,
+          "predicted_entity_name": "Citizen_(Kenya)",
+          "rank": 1,
+          "score": -0.34571805596351624
+        },
+        "ground_truth": {
+          "true_entity_id": 16,
+          "true_entity_name": "Citizen_(Kenya)"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 33,
+          "head_name": "Ashraf_Ghani_Ahmadzai",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 258,
+          "tail_name": "Jens_Stoltenberg"
+        },
+        "prediction": {
+          "predicted_entity_id": 40,
+          "predicted_entity_name": "Abdullah_Abdullah",
+          "rank": 4,
+          "score": -0.6837661862373352
+        },
+        "ground_truth": {
+          "true_entity_id": 258,
+          "true_entity_name": "Jens_Stoltenberg"
+        },
+        "is_correct": false,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 864,
+          "head_name": "Refugee_(Afghanistan)",
+          "relation_id": 4,
+          "relation_name": "Make_a_visit",
+          "tail_id": 1,
+          "tail_name": "Iran"
+        },
+        "prediction": {
+          "predicted_entity_id": 1,
+          "predicted_entity_name": "Iran",
+          "rank": 1,
+          "score": -0.009390016086399555
+        },
+        "ground_truth": {
+          "true_entity_id": 1,
+          "true_entity_name": "Iran"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 551,
+          "head_name": "Grand_National_Party",
+          "relation_id": 3,
+          "relation_name": "Express_intent_to_meet_or_negotiate",
+          "tail_id": 60,
+          "tail_name": "Citizen_(South_Korea)"
+        },
+        "prediction": {
+          "predicted_entity_id": 0,
+          "predicted_entity_name": "China",
+          "rank": 4,
+          "score": -1.393262267112732
+        },
+        "ground_truth": {
+          "true_entity_id": 60,
+          "true_entity_name": "Citizen_(South_Korea)"
+        },
+        "is_correct": false,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 145,
+          "head_name": "Umar_al_Bashir",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 37,
+          "tail_name": "Sudan"
+        },
+        "prediction": {
+          "predicted_entity_id": 145,
+          "predicted_entity_name": "Umar_al_Bashir",
+          "rank": 3,
+          "score": -2.4301631450653076
+        },
+        "ground_truth": {
+          "true_entity_id": 37,
+          "true_entity_name": "Sudan"
+        },
+        "is_correct": false,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 127,
+          "head_name": "Protester_(Egypt)",
+          "relation_id": 31,
+          "relation_name": "Protest_violently,_riot",
+          "tail_id": 64,
+          "tail_name": "Police_(Egypt)"
+        },
+        "prediction": {
+          "predicted_entity_id": 64,
+          "predicted_entity_name": "Police_(Egypt)",
+          "rank": 1,
+          "score": -0.012348164804279804
+        },
+        "ground_truth": {
+          "true_entity_id": 64,
+          "true_entity_name": "Police_(Egypt)"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 337,
+          "head_name": "Student_(Hong_Kong)",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 91,
+          "tail_name": "Protester_(Hong_Kong)"
+        },
+        "prediction": {
+          "predicted_entity_id": 91,
+          "predicted_entity_name": "Protester_(Hong_Kong)",
+          "rank": 1,
+          "score": -0.9923337697982788
+        },
+        "ground_truth": {
+          "true_entity_id": 91,
+          "true_entity_name": "Protester_(Hong_Kong)"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 18,
+          "head_name": "Thailand",
+          "relation_id": 13,
+          "relation_name": "Express_intent_to_cooperate",
+          "tail_id": 30,
+          "tail_name": "Malaysia"
+        },
+        "prediction": {
+          "predicted_entity_id": 30,
+          "predicted_entity_name": "Malaysia",
+          "rank": 1,
+          "score": -0.4906613826751709
+        },
+        "ground_truth": {
+          "true_entity_id": 30,
+          "true_entity_name": "Malaysia"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 19,
+          "head_name": "Police_(Australia)",
+          "relation_id": 6,
+          "relation_name": "Arrest,_detain,_or_charge_with_legal_action",
+          "tail_id": 17,
+          "tail_name": "Citizen_(Australia)"
+        },
+        "prediction": {
+          "predicted_entity_id": 17,
+          "predicted_entity_name": "Citizen_(Australia)",
+          "rank": 1,
+          "score": -0.2539629638195038
+        },
+        "ground_truth": {
+          "true_entity_id": 17,
+          "true_entity_name": "Citizen_(Australia)"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 267,
+          "head_name": "Terrorist_(Islamic_State_of_Iraq_and_the_Levant)",
+          "relation_id": 23,
+          "relation_name": "Threaten",
+          "tail_id": 8,
+          "tail_name": "Iraq"
+        },
+        "prediction": {
+          "predicted_entity_id": 8,
+          "predicted_entity_name": "Iraq",
+          "rank": 1,
+          "score": -0.4142370820045471
+        },
+        "ground_truth": {
+          "true_entity_id": 8,
+          "true_entity_name": "Iraq"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 91,
+          "head_name": "Protester_(Hong_Kong)",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 101,
+          "tail_name": "Police_(Hong_Kong)"
+        },
+        "prediction": {
+          "predicted_entity_id": 101,
+          "predicted_entity_name": "Police_(Hong_Kong)",
+          "rank": 1,
+          "score": -0.11533716320991516
+        },
+        "ground_truth": {
+          "true_entity_id": 101,
+          "true_entity_name": "Police_(Hong_Kong)"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 2,
+          "head_name": "Citizen_(Nigeria)",
+          "relation_id": 2,
+          "relation_name": "Make_an_appeal_or_request",
+          "tail_id": 9,
+          "tail_name": "Government_(Nigeria)"
+        },
+        "prediction": {
+          "predicted_entity_id": 9,
+          "predicted_entity_name": "Government_(Nigeria)",
+          "rank": 1,
+          "score": -2.0811917781829834
+        },
+        "ground_truth": {
+          "true_entity_id": 9,
+          "true_entity_name": "Government_(Nigeria)"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 40,
+          "head_name": "Abdullah_Abdullah",
+          "relation_id": 27,
+          "relation_name": "Meet_at_a_'third'_location",
+          "tail_id": 33,
+          "tail_name": "Ashraf_Ghani_Ahmadzai"
+        },
+        "prediction": {
+          "predicted_entity_id": 33,
+          "predicted_entity_name": "Ashraf_Ghani_Ahmadzai",
+          "rank": 1,
+          "score": -0.23768801987171173
+        },
+        "ground_truth": {
+          "true_entity_id": 33,
+          "true_entity_name": "Ashraf_Ghani_Ahmadzai"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 109,
+          "head_name": "Head_of_Government_(China)",
+          "relation_id": 3,
+          "relation_name": "Express_intent_to_meet_or_negotiate",
+          "tail_id": 0,
+          "tail_name": "China"
+        },
+        "prediction": {
+          "predicted_entity_id": 0,
+          "predicted_entity_name": "China",
+          "rank": 1,
+          "score": -1.226635456085205
+        },
+        "ground_truth": {
+          "true_entity_id": 0,
+          "true_entity_name": "China"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 54,
+          "head_name": "Israeli_Defense_Forces",
+          "relation_id": 21,
+          "relation_name": "fight_with_small_arms_and_light_weapons",
+          "tail_id": 1760,
+          "tail_name": "Women_(Palestinian_Territory,_Occupied)"
+        },
+        "prediction": {
+          "predicted_entity_id": 187,
+          "predicted_entity_name": "Children_(Palestinian_Territory,_Occupied)",
+          "rank": 3,
+          "score": -0.39354991912841797
+        },
+        "ground_truth": {
+          "true_entity_id": 1760,
+          "true_entity_name": "Women_(Palestinian_Territory,_Occupied)"
+        },
+        "is_correct": false,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 41,
+          "head_name": "Abdel_Fattah_Al-Sisi",
+          "relation_id": 15,
+          "relation_name": "Express_intent_to_engage_in_diplomatic_cooperation_(such_as_policy_support)",
+          "tail_id": 37,
+          "tail_name": "Sudan"
+        },
+        "prediction": {
+          "predicted_entity_id": 41,
+          "predicted_entity_name": "Abdel_Fattah_Al-Sisi",
+          "rank": 38,
+          "score": -1.2960089445114136
+        },
+        "ground_truth": {
+          "true_entity_id": 37,
+          "true_entity_name": "Sudan"
+        },
+        "is_correct": false,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 886,
+          "head_name": "Maithripala_Sirisena",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 201,
+          "tail_name": "Mahinda_Rajapaksa"
+        },
+        "prediction": {
+          "predicted_entity_id": 0,
+          "predicted_entity_name": "China",
+          "rank": 3,
+          "score": -1.3086594343185425
+        },
+        "ground_truth": {
+          "true_entity_id": 201,
+          "true_entity_name": "Mahinda_Rajapaksa"
+        },
+        "is_correct": false,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 107,
+          "head_name": "Citizen_(Sudan)",
+          "relation_id": 36,
+          "relation_name": "Physically_assault",
+          "tail_id": 332,
+          "tail_name": "Police_(Sudan)"
+        },
+        "prediction": {
+          "predicted_entity_id": 332,
+          "predicted_entity_name": "Police_(Sudan)",
+          "rank": 1,
+          "score": -1.9149482250213623
+        },
+        "ground_truth": {
+          "true_entity_id": 332,
+          "true_entity_name": "Police_(Sudan)"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 964,
+          "head_name": "Scholar_(Nigeria)",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 297,
+          "tail_name": "Muslim_(Nigeria)"
+        },
+        "prediction": {
+          "predicted_entity_id": 9,
+          "predicted_entity_name": "Government_(Nigeria)",
+          "rank": 22,
+          "score": -0.9746759533882141
+        },
+        "ground_truth": {
+          "true_entity_id": 297,
+          "true_entity_name": "Muslim_(Nigeria)"
+        },
+        "is_correct": false,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 14,
+          "head_name": "Mohammad_Javad_Zarif",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 1,
+          "tail_name": "Iran"
+        },
+        "prediction": {
+          "predicted_entity_id": 1,
+          "predicted_entity_name": "Iran",
+          "rank": 1,
+          "score": -0.168277770280838
+        },
+        "ground_truth": {
+          "true_entity_id": 1,
+          "true_entity_name": "Iran"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 299,
+          "head_name": "Congress_(United_States)",
+          "relation_id": 52,
+          "relation_name": "Impose_embargo,_boycott,_or_sanctions",
+          "tail_id": 1,
+          "tail_name": "Iran"
+        },
+        "prediction": {
+          "predicted_entity_id": 1,
+          "predicted_entity_name": "Iran",
+          "rank": 1,
+          "score": -0.6578496694564819
+        },
+        "ground_truth": {
+          "true_entity_id": 1,
+          "true_entity_name": "Iran"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 3,
+          "head_name": "Citizen_(India)",
+          "relation_id": 21,
+          "relation_name": "fight_with_small_arms_and_light_weapons",
+          "tail_id": 225,
+          "tail_name": "Military_Personnel_-_Special_(India)"
+        },
+        "prediction": {
+          "predicted_entity_id": 154,
+          "predicted_entity_name": "Thief_(India)",
+          "rank": 2,
+          "score": -1.064270257949829
+        },
+        "ground_truth": {
+          "true_entity_id": 225,
+          "true_entity_name": "Military_Personnel_-_Special_(India)"
+        },
+        "is_correct": false,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 2643,
+          "head_name": "Sri_Lanka_United_National_Party",
+          "relation_id": 7,
+          "relation_name": "Praise_or_endorse",
+          "tail_id": 886,
+          "tail_name": "Maithripala_Sirisena"
+        },
+        "prediction": {
+          "predicted_entity_id": 1,
+          "predicted_entity_name": "Iran",
+          "rank": 55,
+          "score": -3.376783847808838
+        },
+        "ground_truth": {
+          "true_entity_id": 886,
+          "true_entity_name": "Maithripala_Sirisena"
+        },
+        "is_correct": false,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 1,
+          "head_name": "Iran",
+          "relation_id": 16,
+          "relation_name": "Engage_in_diplomatic_cooperation",
+          "tail_id": 148,
+          "tail_name": "Oman"
+        },
+        "prediction": {
+          "predicted_entity_id": 148,
+          "predicted_entity_name": "Oman",
+          "rank": 1,
+          "score": -1.3173770904541016
+        },
+        "ground_truth": {
+          "true_entity_id": 148,
+          "true_entity_name": "Oman"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 47,
+          "head_name": "Head_of_Government_(India)",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 56,
+          "tail_name": "Employee_(India)"
+        },
+        "prediction": {
+          "predicted_entity_id": 47,
+          "predicted_entity_name": "Head_of_Government_(India)",
+          "rank": 2,
+          "score": -2.175870895385742
+        },
+        "ground_truth": {
+          "true_entity_id": 56,
+          "true_entity_name": "Employee_(India)"
+        },
+        "is_correct": false,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 28,
+          "head_name": "Boko_Haram",
+          "relation_id": 2,
+          "relation_name": "Make_an_appeal_or_request",
+          "tail_id": 9,
+          "tail_name": "Government_(Nigeria)"
+        },
+        "prediction": {
+          "predicted_entity_id": 2,
+          "predicted_entity_name": "Citizen_(Nigeria)",
+          "rank": 2,
+          "score": -0.8553751111030579
+        },
+        "ground_truth": {
+          "true_entity_id": 9,
+          "true_entity_name": "Government_(Nigeria)"
+        },
+        "is_correct": false,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 53,
+          "head_name": "Hamas",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 287,
+          "tail_name": "Government_(Palestinian_Territory,_Occupied)"
+        },
+        "prediction": {
+          "predicted_entity_id": 22,
+          "predicted_entity_name": "Benjamin_Netanyahu",
+          "rank": 2,
+          "score": -1.2124311923980713
+        },
+        "ground_truth": {
+          "true_entity_id": 287,
+          "true_entity_name": "Government_(Palestinian_Territory,_Occupied)"
+        },
+        "is_correct": false,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 374,
+          "head_name": "Media_Personnel_(Australia)",
+          "relation_id": 2,
+          "relation_name": "Make_an_appeal_or_request",
+          "tail_id": 17,
+          "tail_name": "Citizen_(Australia)"
+        },
+        "prediction": {
+          "predicted_entity_id": 17,
+          "predicted_entity_name": "Citizen_(Australia)",
+          "rank": 1,
+          "score": -0.1883227378129959
+        },
+        "ground_truth": {
+          "true_entity_id": 17,
+          "true_entity_name": "Citizen_(Australia)"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 193,
+          "head_name": "Lawyer/Attorney_(South_Korea)",
+          "relation_id": 18,
+          "relation_name": "Investigate",
+          "tail_id": 60,
+          "tail_name": "Citizen_(South_Korea)"
+        },
+        "prediction": {
+          "predicted_entity_id": 60,
+          "predicted_entity_name": "Citizen_(South_Korea)",
+          "rank": 1,
+          "score": -1.1803094148635864
+        },
+        "ground_truth": {
+          "true_entity_id": 60,
+          "true_entity_name": "Citizen_(South_Korea)"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 20,
+          "head_name": "Philippines",
+          "relation_id": 6,
+          "relation_name": "Arrest,_detain,_or_charge_with_legal_action",
+          "tail_id": 108,
+          "tail_name": "Criminal_(Philippines)"
+        },
+        "prediction": {
+          "predicted_entity_id": 108,
+          "predicted_entity_name": "Criminal_(Philippines)",
+          "rank": 1,
+          "score": -0.7283869385719299
+        },
+        "ground_truth": {
+          "true_entity_id": 108,
+          "true_entity_name": "Criminal_(Philippines)"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 16,
+          "head_name": "Citizen_(Kenya)",
+          "relation_id": 14,
+          "relation_name": "Demand",
+          "tail_id": 36,
+          "tail_name": "Government_(Kenya)"
+        },
+        "prediction": {
+          "predicted_entity_id": 36,
+          "predicted_entity_name": "Government_(Kenya)",
+          "rank": 1,
+          "score": -0.9810413122177124
+        },
+        "ground_truth": {
+          "true_entity_id": 36,
+          "true_entity_name": "Government_(Kenya)"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 42,
+          "head_name": "Nuri_al-Maliki",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 8,
+          "tail_name": "Iraq"
+        },
+        "prediction": {
+          "predicted_entity_id": 8,
+          "predicted_entity_name": "Iraq",
+          "rank": 1,
+          "score": -1.0846335887908936
+        },
+        "ground_truth": {
+          "true_entity_id": 8,
+          "true_entity_name": "Iraq"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 18,
+          "head_name": "Thailand",
+          "relation_id": 15,
+          "relation_name": "Express_intent_to_engage_in_diplomatic_cooperation_(such_as_policy_support)",
+          "tail_id": 30,
+          "tail_name": "Malaysia"
+        },
+        "prediction": {
+          "predicted_entity_id": 80,
+          "predicted_entity_name": "Cambodia",
+          "rank": 2,
+          "score": -1.9229215383529663
+        },
+        "ground_truth": {
+          "true_entity_id": 30,
+          "true_entity_name": "Malaysia"
+        },
+        "is_correct": false,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 64,
+          "head_name": "Police_(Egypt)",
+          "relation_id": 34,
+          "relation_name": "Use_tactics_of_violent_repression",
+          "tail_id": 127,
+          "tail_name": "Protester_(Egypt)"
+        },
+        "prediction": {
+          "predicted_entity_id": 127,
+          "predicted_entity_name": "Protester_(Egypt)",
+          "rank": 1,
+          "score": -0.025719814002513885
+        },
+        "ground_truth": {
+          "true_entity_id": 127,
+          "true_entity_name": "Protester_(Egypt)"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 54,
+          "head_name": "Israeli_Defense_Forces",
+          "relation_id": 11,
+          "relation_name": "Use_conventional_military_force",
+          "tail_id": 1760,
+          "tail_name": "Women_(Palestinian_Territory,_Occupied)"
+        },
+        "prediction": {
+          "predicted_entity_id": 187,
+          "predicted_entity_name": "Children_(Palestinian_Territory,_Occupied)",
+          "rank": 2,
+          "score": -0.6051333546638489
+        },
+        "ground_truth": {
+          "true_entity_id": 1760,
+          "true_entity_name": "Women_(Palestinian_Territory,_Occupied)"
+        },
+        "is_correct": false,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 1536,
+          "head_name": "Police_(Gambia)",
+          "relation_id": 6,
+          "relation_name": "Arrest,_detain,_or_charge_with_legal_action",
+          "tail_id": 2848,
+          "tail_name": "Mambury_Njie"
+        },
+        "prediction": {
+          "predicted_entity_id": 2848,
+          "predicted_entity_name": "Mambury_Njie",
+          "rank": 1,
+          "score": -1.069286584854126
+        },
+        "ground_truth": {
+          "true_entity_id": 2848,
+          "true_entity_name": "Mambury_Njie"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 1,
+          "head_name": "Iran",
+          "relation_id": 16,
+          "relation_name": "Engage_in_diplomatic_cooperation",
+          "tail_id": 58,
+          "tail_name": "Qatar"
+        },
+        "prediction": {
+          "predicted_entity_id": 58,
+          "predicted_entity_name": "Qatar",
+          "rank": 1,
+          "score": -2.0464084148406982
+        },
+        "ground_truth": {
+          "true_entity_id": 58,
+          "true_entity_name": "Qatar"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 5,
+          "head_name": "Japan",
+          "relation_id": 15,
+          "relation_name": "Express_intent_to_engage_in_diplomatic_cooperation_(such_as_policy_support)",
+          "tail_id": 7,
+          "tail_name": "South_Korea"
+        },
+        "prediction": {
+          "predicted_entity_id": 0,
+          "predicted_entity_name": "China",
+          "rank": 2,
+          "score": -1.744934320449829
+        },
+        "ground_truth": {
+          "true_entity_id": 7,
+          "true_entity_name": "South_Korea"
+        },
+        "is_correct": false,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 677,
+          "head_name": "Bukola_Saraki",
+          "relation_id": 2,
+          "relation_name": "Make_an_appeal_or_request",
+          "tail_id": 9,
+          "tail_name": "Government_(Nigeria)"
+        },
+        "prediction": {
+          "predicted_entity_id": 2,
+          "predicted_entity_name": "Citizen_(Nigeria)",
+          "rank": 2,
+          "score": -0.24580693244934082
+        },
+        "ground_truth": {
+          "true_entity_id": 9,
+          "true_entity_name": "Government_(Nigeria)"
+        },
+        "is_correct": false,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 12,
+          "head_name": "Sergey_Viktorovich_Lavrov",
+          "relation_id": 3,
+          "relation_name": "Express_intent_to_meet_or_negotiate",
+          "tail_id": 37,
+          "tail_name": "Sudan"
+        },
+        "prediction": {
+          "predicted_entity_id": 37,
+          "predicted_entity_name": "Sudan",
+          "rank": 1,
+          "score": -0.3367515504360199
+        },
+        "ground_truth": {
+          "true_entity_id": 37,
+          "true_entity_name": "Sudan"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 101,
+          "head_name": "Police_(Hong_Kong)",
+          "relation_id": 36,
+          "relation_name": "Physically_assault",
+          "tail_id": 91,
+          "tail_name": "Protester_(Hong_Kong)"
+        },
+        "prediction": {
+          "predicted_entity_id": 91,
+          "predicted_entity_name": "Protester_(Hong_Kong)",
+          "rank": 1,
+          "score": -0.07722353935241699
+        },
+        "ground_truth": {
+          "true_entity_id": 91,
+          "true_entity_name": "Protester_(Hong_Kong)"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 137,
+          "head_name": "Government_(Venezuela)",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 812,
+          "tail_name": "Criminal_(Venezuela)"
+        },
+        "prediction": {
+          "predicted_entity_id": 1108,
+          "predicted_entity_name": "Ministry_(Venezuela)",
+          "rank": 3,
+          "score": -2.287421464920044
+        },
+        "ground_truth": {
+          "true_entity_id": 812,
+          "true_entity_name": "Criminal_(Venezuela)"
+        },
+        "is_correct": false,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 255,
+          "head_name": "Court_Judge_(Kenya)",
+          "relation_id": 43,
+          "relation_name": "Impose_administrative_sanctions",
+          "tail_id": 786,
+          "tail_name": "Member_of_Legislative_(Govt)_(Kenya)"
+        },
+        "prediction": {
+          "predicted_entity_id": 16,
+          "predicted_entity_name": "Citizen_(Kenya)",
+          "rank": 163,
+          "score": -0.5358757376670837
+        },
+        "ground_truth": {
+          "true_entity_id": 786,
+          "true_entity_name": "Member_of_Legislative_(Govt)_(Kenya)"
+        },
+        "is_correct": false,
+        "hop_category": "1-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 28,
+          "head_name": "Boko_Haram",
+          "relation_id": 25,
+          "relation_name": "Abduct,_hijack,_or_take_hostage",
+          "tail_id": 2,
+          "tail_name": "Citizen_(Nigeria)"
+        },
+        "prediction": {
+          "predicted_entity_id": 2,
+          "predicted_entity_name": "Citizen_(Nigeria)",
+          "rank": 1,
+          "score": -0.09852629899978638
+        },
+        "ground_truth": {
+          "true_entity_id": 2,
+          "true_entity_name": "Citizen_(Nigeria)"
+        },
+        "is_correct": true,
+        "hop_category": "1-hop"
+      }
+    ],
+    "2-hop": [
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 88,
+          "head_name": "Bahrain",
+          "relation_id": 20,
+          "relation_name": "Reject",
+          "tail_id": 24,
+          "tail_name": "North_Atlantic_Treaty_Organization"
+        },
+        "prediction": {
+          "predicted_entity_id": 58,
+          "predicted_entity_name": "Qatar",
+          "rank": 141,
+          "score": -0.8311491012573242
+        },
+        "ground_truth": {
+          "true_entity_id": 24,
+          "true_entity_name": "North_Atlantic_Treaty_Organization"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 2843,
+          "head_name": "Lin_Chia-lung",
+          "relation_id": 35,
+          "relation_name": "Occupy_territory",
+          "tail_id": 585,
+          "tail_name": "Kuomintang"
+        },
+        "prediction": {
+          "predicted_entity_id": 2819,
+          "predicted_entity_name": "Jason_C._Hu",
+          "rank": 177,
+          "score": -1.951378345489502
+        },
+        "ground_truth": {
+          "true_entity_id": 585,
+          "true_entity_name": "Kuomintang"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 1897,
+          "head_name": "Company_-_Owner_or_Operator_(Turkey)",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 469,
+          "tail_name": "Mulatu_Teshome"
+        },
+        "prediction": {
+          "predicted_entity_id": 145,
+          "predicted_entity_name": "Umar_al_Bashir",
+          "rank": 26,
+          "score": -1.6752526760101318
+        },
+        "ground_truth": {
+          "true_entity_id": 469,
+          "true_entity_name": "Mulatu_Teshome"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 102,
+          "head_name": "Member_of_Parliament_(India)",
+          "relation_id": 2,
+          "relation_name": "Make_an_appeal_or_request",
+          "tail_id": 842,
+          "tail_name": "Justice_Department/Ministery_(India)"
+        },
+        "prediction": {
+          "predicted_entity_id": 3,
+          "predicted_entity_name": "Citizen_(India)",
+          "rank": 24,
+          "score": -0.2724383473396301
+        },
+        "ground_truth": {
+          "true_entity_id": 842,
+          "true_entity_name": "Justice_Department/Ministery_(India)"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 82,
+          "head_name": "Military_(Lebanon)",
+          "relation_id": 6,
+          "relation_name": "Arrest,_detain,_or_charge_with_legal_action",
+          "tail_id": 17,
+          "tail_name": "Citizen_(Australia)"
+        },
+        "prediction": {
+          "predicted_entity_id": 736,
+          "predicted_entity_name": "Armed_Gang_(Syria)",
+          "rank": 571,
+          "score": -0.8417245745658875
+        },
+        "ground_truth": {
+          "true_entity_id": 17,
+          "true_entity_name": "Citizen_(Australia)"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 1132,
+          "head_name": "Djoomart_Otorbaev",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 181,
+          "tail_name": "Dmitry_Anatolyevich_Medvedev"
+        },
+        "prediction": {
+          "predicted_entity_id": 181,
+          "predicted_entity_name": "Dmitry_Anatolyevich_Medvedev",
+          "rank": 1,
+          "score": -1.229850172996521
+        },
+        "ground_truth": {
+          "true_entity_id": 181,
+          "true_entity_name": "Dmitry_Anatolyevich_Medvedev"
+        },
+        "is_correct": true,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 1859,
+          "head_name": "Sylvia_Masebo",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 402,
+          "tail_name": "Guy_Scott"
+        },
+        "prediction": {
+          "predicted_entity_id": 234,
+          "predicted_entity_name": "Michael_Sata",
+          "rank": 6,
+          "score": -0.7426245212554932
+        },
+        "ground_truth": {
+          "true_entity_id": 402,
+          "true_entity_name": "Guy_Scott"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 241,
+          "head_name": "Company_-_Owner_or_Operator_(Nigeria)",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 606,
+          "tail_name": "Vanguard"
+        },
+        "prediction": {
+          "predicted_entity_id": 52,
+          "predicted_entity_name": "Head_of_Government_(Nigeria)",
+          "rank": 4,
+          "score": -1.5503566265106201
+        },
+        "ground_truth": {
+          "true_entity_id": 606,
+          "true_entity_name": "Vanguard"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 259,
+          "head_name": "Ministry_(Russia)",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 37,
+          "tail_name": "Sudan"
+        },
+        "prediction": {
+          "predicted_entity_id": 227,
+          "predicted_entity_name": "Interfax",
+          "rank": 73,
+          "score": -1.882663607597351
+        },
+        "ground_truth": {
+          "true_entity_id": 37,
+          "true_entity_name": "Sudan"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 40,
+          "head_name": "Abdullah_Abdullah",
+          "relation_id": 27,
+          "relation_name": "Meet_at_a_'third'_location",
+          "tail_id": 258,
+          "tail_name": "Jens_Stoltenberg"
+        },
+        "prediction": {
+          "predicted_entity_id": 24,
+          "predicted_entity_name": "North_Atlantic_Treaty_Organization",
+          "rank": 2,
+          "score": -2.2449426651000977
+        },
+        "ground_truth": {
+          "true_entity_id": 258,
+          "true_entity_name": "Jens_Stoltenberg"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 161,
+          "head_name": "Head_of_Government_(Afghanistan)",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 639,
+          "tail_name": "Ministry_(Afghanistan)"
+        },
+        "prediction": {
+          "predicted_entity_id": 15,
+          "predicted_entity_name": "Afghanistan",
+          "rank": 8,
+          "score": -1.1450783014297485
+        },
+        "ground_truth": {
+          "true_entity_id": 639,
+          "true_entity_name": "Ministry_(Afghanistan)"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 697,
+          "head_name": "Ministry_(South_Korea)",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 20,
+          "tail_name": "Philippines"
+        },
+        "prediction": {
+          "predicted_entity_id": 7,
+          "predicted_entity_name": "South_Korea",
+          "rank": 60,
+          "score": -0.8384201526641846
+        },
+        "ground_truth": {
+          "true_entity_id": 20,
+          "true_entity_name": "Philippines"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 875,
+          "head_name": "Bishop_(Nigeria)",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 205,
+          "tail_name": "Emmanuel_Eweta_Uduaghan"
+        },
+        "prediction": {
+          "predicted_entity_id": 9,
+          "predicted_entity_name": "Government_(Nigeria)",
+          "rank": 49,
+          "score": -0.6819908618927002
+        },
+        "ground_truth": {
+          "true_entity_id": 205,
+          "true_entity_name": "Emmanuel_Eweta_Uduaghan"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 2203,
+          "head_name": "Administrative_Body_(India)",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 102,
+          "tail_name": "Member_of_Parliament_(India)"
+        },
+        "prediction": {
+          "predicted_entity_id": 102,
+          "predicted_entity_name": "Member_of_Parliament_(India)",
+          "rank": 1,
+          "score": -0.5202655792236328
+        },
+        "ground_truth": {
+          "true_entity_id": 102,
+          "true_entity_name": "Member_of_Parliament_(India)"
+        },
+        "is_correct": true,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 102,
+          "head_name": "Member_of_Parliament_(India)",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 2203,
+          "tail_name": "Administrative_Body_(India)"
+        },
+        "prediction": {
+          "predicted_entity_id": 2203,
+          "predicted_entity_name": "Administrative_Body_(India)",
+          "rank": 1,
+          "score": -0.3524869680404663
+        },
+        "ground_truth": {
+          "true_entity_id": 2203,
+          "true_entity_name": "Administrative_Body_(India)"
+        },
+        "is_correct": true,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 1860,
+          "head_name": "Tamil_National_Alliance",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 886,
+          "tail_name": "Maithripala_Sirisena"
+        },
+        "prediction": {
+          "predicted_entity_id": 541,
+          "predicted_entity_name": "Tan_Sri_Muhyiddin_Yassin",
+          "rank": 83,
+          "score": -1.6542776823043823
+        },
+        "ground_truth": {
+          "true_entity_id": 886,
+          "true_entity_name": "Maithripala_Sirisena"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 608,
+          "head_name": "Food_and_Agriculture_Organization",
+          "relation_id": 7,
+          "relation_name": "Praise_or_endorse",
+          "tail_id": 49,
+          "tail_name": "Mexico"
+        },
+        "prediction": {
+          "predicted_entity_id": 1,
+          "predicted_entity_name": "Iran",
+          "rank": 123,
+          "score": -0.6200412511825562
+        },
+        "ground_truth": {
+          "true_entity_id": 49,
+          "true_entity_name": "Mexico"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 3349,
+          "head_name": "Nonofo_Molefhi",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 687,
+          "tail_name": "Botswana"
+        },
+        "prediction": {
+          "predicted_entity_id": 687,
+          "predicted_entity_name": "Botswana",
+          "rank": 1,
+          "score": -1.570227026939392
+        },
+        "ground_truth": {
+          "true_entity_id": 687,
+          "true_entity_name": "Botswana"
+        },
+        "is_correct": true,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 98,
+          "head_name": "Julie_Bishop",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 1516,
+          "tail_name": "Media_(Japan)"
+        },
+        "prediction": {
+          "predicted_entity_id": 19,
+          "predicted_entity_name": "Police_(Australia)",
+          "rank": 772,
+          "score": -1.9734665155410767
+        },
+        "ground_truth": {
+          "true_entity_id": 1516,
+          "true_entity_name": "Media_(Japan)"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 1449,
+          "head_name": "Louise_Mushikiwabo",
+          "relation_id": 8,
+          "relation_name": "Criticize_or_denounce",
+          "tail_id": 27,
+          "tail_name": "François_Hollande"
+        },
+        "prediction": {
+          "predicted_entity_id": 10,
+          "predicted_entity_name": "France",
+          "rank": 8,
+          "score": -0.26487281918525696
+        },
+        "ground_truth": {
+          "true_entity_id": 27,
+          "true_entity_name": "François_Hollande"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 469,
+          "head_name": "Mulatu_Teshome",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 1897,
+          "tail_name": "Company_-_Owner_or_Operator_(Turkey)"
+        },
+        "prediction": {
+          "predicted_entity_id": 1860,
+          "predicted_entity_name": "Tamil_National_Alliance",
+          "rank": 21,
+          "score": -1.1032830476760864
+        },
+        "ground_truth": {
+          "true_entity_id": 1897,
+          "true_entity_name": "Company_-_Owner_or_Operator_(Turkey)"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 849,
+          "head_name": "Willem-Alexander",
+          "relation_id": 28,
+          "relation_name": "Engage_in_symbolic_act",
+          "tail_id": 500,
+          "tail_name": "Gurbanguly_Berdymukhammedov"
+        },
+        "prediction": {
+          "predicted_entity_id": 91,
+          "predicted_entity_name": "Protester_(Hong_Kong)",
+          "rank": 1714,
+          "score": -2.496598482131958
+        },
+        "ground_truth": {
+          "true_entity_id": 500,
+          "true_entity_name": "Gurbanguly_Berdymukhammedov"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 1436,
+          "head_name": "Haaretz",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 58,
+          "tail_name": "Qatar"
+        },
+        "prediction": {
+          "predicted_entity_id": 22,
+          "predicted_entity_name": "Benjamin_Netanyahu",
+          "rank": 50,
+          "score": -0.5313096046447754
+        },
+        "ground_truth": {
+          "true_entity_id": 58,
+          "true_entity_name": "Qatar"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 825,
+          "head_name": "Political_Parties_(Pakistan)",
+          "relation_id": 20,
+          "relation_name": "Reject",
+          "tail_id": 226,
+          "tail_name": "Pakistan_Tehreek-e-Insaf"
+        },
+        "prediction": {
+          "predicted_entity_id": 122,
+          "predicted_entity_name": "Head_of_Government_(Pakistan)",
+          "rank": 4,
+          "score": -1.6947085857391357
+        },
+        "ground_truth": {
+          "true_entity_id": 226,
+          "true_entity_name": "Pakistan_Tehreek-e-Insaf"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 3207,
+          "head_name": "House_Speaker_(Philippines)",
+          "relation_id": 28,
+          "relation_name": "Engage_in_symbolic_act",
+          "tail_id": 441,
+          "tail_name": "Employee_(Philippines)"
+        },
+        "prediction": {
+          "predicted_entity_id": 441,
+          "predicted_entity_name": "Employee_(Philippines)",
+          "rank": 1,
+          "score": -2.3205747604370117
+        },
+        "ground_truth": {
+          "true_entity_id": 441,
+          "true_entity_name": "Employee_(Philippines)"
+        },
+        "is_correct": true,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 772,
+          "head_name": "Alex_Badeh",
+          "relation_id": 14,
+          "relation_name": "Demand",
+          "tail_id": 591,
+          "tail_name": "High_Ranking_Military_Personnel_(Nigeria)"
+        },
+        "prediction": {
+          "predicted_entity_id": 2,
+          "predicted_entity_name": "Citizen_(Nigeria)",
+          "rank": 24,
+          "score": -0.3605976402759552
+        },
+        "ground_truth": {
+          "true_entity_id": 591,
+          "true_entity_name": "High_Ranking_Military_Personnel_(Nigeria)"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 199,
+          "head_name": "Muhammadu_Buhari",
+          "relation_id": 7,
+          "relation_name": "Praise_or_endorse",
+          "tail_id": 281,
+          "tail_name": "Adams_Oshiomhole"
+        },
+        "prediction": {
+          "predicted_entity_id": 52,
+          "predicted_entity_name": "Head_of_Government_(Nigeria)",
+          "rank": 65,
+          "score": -1.3029873371124268
+        },
+        "ground_truth": {
+          "true_entity_id": 281,
+          "true_entity_name": "Adams_Oshiomhole"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 205,
+          "head_name": "Emmanuel_Eweta_Uduaghan",
+          "relation_id": 7,
+          "relation_name": "Praise_or_endorse",
+          "tail_id": 106,
+          "tail_name": "Court_Judge_(Nigeria)"
+        },
+        "prediction": {
+          "predicted_entity_id": 2,
+          "predicted_entity_name": "Citizen_(Nigeria)",
+          "rank": 32,
+          "score": -1.295715093612671
+        },
+        "ground_truth": {
+          "true_entity_id": 106,
+          "true_entity_name": "Court_Judge_(Nigeria)"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 1990,
+          "head_name": "Party_Member_(Sri_Lanka)",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 886,
+          "tail_name": "Maithripala_Sirisena"
+        },
+        "prediction": {
+          "predicted_entity_id": 1990,
+          "predicted_entity_name": "Party_Member_(Sri_Lanka)",
+          "rank": 22,
+          "score": -1.7477338314056396
+        },
+        "ground_truth": {
+          "true_entity_id": 886,
+          "true_entity_name": "Maithripala_Sirisena"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 4049,
+          "head_name": "South_African_Chamber_of_Commerce_and_Industry",
+          "relation_id": 7,
+          "relation_name": "Praise_or_endorse",
+          "tail_id": 260,
+          "tail_name": "Ministry_(South_Africa)"
+        },
+        "prediction": {
+          "predicted_entity_id": 29,
+          "predicted_entity_name": "South_Africa",
+          "rank": 4,
+          "score": -1.5625957250595093
+        },
+        "ground_truth": {
+          "true_entity_id": 260,
+          "true_entity_name": "Ministry_(South_Africa)"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 772,
+          "head_name": "Alex_Badeh",
+          "relation_id": 2,
+          "relation_name": "Make_an_appeal_or_request",
+          "tail_id": 591,
+          "tail_name": "High_Ranking_Military_Personnel_(Nigeria)"
+        },
+        "prediction": {
+          "predicted_entity_id": 2,
+          "predicted_entity_name": "Citizen_(Nigeria)",
+          "rank": 24,
+          "score": -0.19996802508831024
+        },
+        "ground_truth": {
+          "true_entity_id": 591,
+          "true_entity_name": "High_Ranking_Military_Personnel_(Nigeria)"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 1371,
+          "head_name": "Ijaw_Youth_Council",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 197,
+          "tail_name": "Chibuike_Rotimi_Amaechi"
+        },
+        "prediction": {
+          "predicted_entity_id": 9,
+          "predicted_entity_name": "Government_(Nigeria)",
+          "rank": 13,
+          "score": -0.6978840827941895
+        },
+        "ground_truth": {
+          "true_entity_id": 197,
+          "true_entity_name": "Chibuike_Rotimi_Amaechi"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 139,
+          "head_name": "New_Zealand",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 834,
+          "tail_name": "Criminal_(Somalia)"
+        },
+        "prediction": {
+          "predicted_entity_id": 468,
+          "predicted_entity_name": "Police_(New_Zealand)",
+          "rank": 4844,
+          "score": -1.8484020233154297
+        },
+        "ground_truth": {
+          "true_entity_id": 834,
+          "true_entity_name": "Criminal_(Somalia)"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 606,
+          "head_name": "Vanguard",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 241,
+          "tail_name": "Company_-_Owner_or_Operator_(Nigeria)"
+        },
+        "prediction": {
+          "predicted_entity_id": 52,
+          "predicted_entity_name": "Head_of_Government_(Nigeria)",
+          "rank": 2,
+          "score": -0.6394662261009216
+        },
+        "ground_truth": {
+          "true_entity_id": 241,
+          "true_entity_name": "Company_-_Owner_or_Operator_(Nigeria)"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 106,
+          "head_name": "Court_Judge_(Nigeria)",
+          "relation_id": 14,
+          "relation_name": "Demand",
+          "tail_id": 4712,
+          "tail_name": "Lateef_Fagbemi"
+        },
+        "prediction": {
+          "predicted_entity_id": 2,
+          "predicted_entity_name": "Citizen_(Nigeria)",
+          "rank": 1752,
+          "score": -0.5349164605140686
+        },
+        "ground_truth": {
+          "true_entity_id": 4712,
+          "true_entity_name": "Lateef_Fagbemi"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 828,
+          "head_name": "Tamar_Beruchashvili",
+          "relation_id": 3,
+          "relation_name": "Express_intent_to_meet_or_negotiate",
+          "tail_id": 258,
+          "tail_name": "Jens_Stoltenberg"
+        },
+        "prediction": {
+          "predicted_entity_id": 372,
+          "predicted_entity_name": "Citizen_(Czech_Republic)",
+          "rank": 25,
+          "score": -1.5930360555648804
+        },
+        "ground_truth": {
+          "true_entity_id": 258,
+          "true_entity_name": "Jens_Stoltenberg"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 886,
+          "head_name": "Maithripala_Sirisena",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 1990,
+          "tail_name": "Party_Member_(Sri_Lanka)"
+        },
+        "prediction": {
+          "predicted_entity_id": 201,
+          "predicted_entity_name": "Mahinda_Rajapaksa",
+          "rank": 2,
+          "score": -0.7194756865501404
+        },
+        "ground_truth": {
+          "true_entity_id": 1990,
+          "true_entity_name": "Party_Member_(Sri_Lanka)"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 608,
+          "head_name": "Food_and_Agriculture_Organization",
+          "relation_id": 7,
+          "relation_name": "Praise_or_endorse",
+          "tail_id": 192,
+          "tail_name": "Cameroon"
+        },
+        "prediction": {
+          "predicted_entity_id": 1,
+          "predicted_entity_name": "Iran",
+          "rank": 844,
+          "score": -0.6200412511825562
+        },
+        "ground_truth": {
+          "true_entity_id": 192,
+          "true_entity_name": "Cameroon"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 2440,
+          "head_name": "Cao_Duc_Phat",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 1029,
+          "tail_name": "Other_Authorities_/_Officials_(Vietnam)"
+        },
+        "prediction": {
+          "predicted_entity_id": 23,
+          "predicted_entity_name": "Vietnam",
+          "rank": 23,
+          "score": -0.29486554861068726
+        },
+        "ground_truth": {
+          "true_entity_id": 1029,
+          "true_entity_name": "Other_Authorities_/_Officials_(Vietnam)"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 4270,
+          "head_name": "Catholic_Priest_(Nigeria)",
+          "relation_id": 7,
+          "relation_name": "Praise_or_endorse",
+          "tail_id": 9,
+          "tail_name": "Government_(Nigeria)"
+        },
+        "prediction": {
+          "predicted_entity_id": 2,
+          "predicted_entity_name": "Citizen_(Nigeria)",
+          "rank": 2,
+          "score": -1.4882588386535645
+        },
+        "ground_truth": {
+          "true_entity_id": 9,
+          "true_entity_name": "Government_(Nigeria)"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 145,
+          "head_name": "Umar_al_Bashir",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 2123,
+          "tail_name": "Malik_Agar"
+        },
+        "prediction": {
+          "predicted_entity_id": 145,
+          "predicted_entity_name": "Umar_al_Bashir",
+          "rank": 157,
+          "score": -2.4301631450653076
+        },
+        "ground_truth": {
+          "true_entity_id": 2123,
+          "true_entity_name": "Malik_Agar"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 1990,
+          "head_name": "Party_Member_(Sri_Lanka)",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 201,
+          "tail_name": "Mahinda_Rajapaksa"
+        },
+        "prediction": {
+          "predicted_entity_id": 201,
+          "predicted_entity_name": "Mahinda_Rajapaksa",
+          "rank": 1,
+          "score": -1.4675177335739136
+        },
+        "ground_truth": {
+          "true_entity_id": 201,
+          "true_entity_name": "Mahinda_Rajapaksa"
+        },
+        "is_correct": true,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 485,
+          "head_name": "Joachim_Gauck",
+          "relation_id": 5,
+          "relation_name": "Host_a_visit",
+          "tail_id": 580,
+          "tail_name": "Royal_Administration_(Spain)"
+        },
+        "prediction": {
+          "predicted_entity_id": 40,
+          "predicted_entity_name": "Abdullah_Abdullah",
+          "rank": 2,
+          "score": -1.0078668594360352
+        },
+        "ground_truth": {
+          "true_entity_id": 580,
+          "true_entity_name": "Royal_Administration_(Spain)"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 469,
+          "head_name": "Mulatu_Teshome",
+          "relation_id": 7,
+          "relation_name": "Praise_or_endorse",
+          "tail_id": 1897,
+          "tail_name": "Company_-_Owner_or_Operator_(Turkey)"
+        },
+        "prediction": {
+          "predicted_entity_id": 0,
+          "predicted_entity_name": "China",
+          "rank": 311,
+          "score": -1.7821903228759766
+        },
+        "ground_truth": {
+          "true_entity_id": 1897,
+          "true_entity_name": "Company_-_Owner_or_Operator_(Turkey)"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 159,
+          "head_name": "Raheel_Sharif",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 6,
+          "tail_name": "John_Kerry"
+        },
+        "prediction": {
+          "predicted_entity_id": 6,
+          "predicted_entity_name": "John_Kerry",
+          "rank": 1,
+          "score": -0.737238883972168
+        },
+        "ground_truth": {
+          "true_entity_id": 6,
+          "true_entity_name": "John_Kerry"
+        },
+        "is_correct": true,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 145,
+          "head_name": "Umar_al_Bashir",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 12,
+          "tail_name": "Sergey_Viktorovich_Lavrov"
+        },
+        "prediction": {
+          "predicted_entity_id": 469,
+          "predicted_entity_name": "Mulatu_Teshome",
+          "rank": 5,
+          "score": -0.804983377456665
+        },
+        "ground_truth": {
+          "true_entity_id": 12,
+          "true_entity_name": "Sergey_Viktorovich_Lavrov"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 309,
+          "head_name": "Royal_Administration_(Nigeria)",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 194,
+          "tail_name": "Indigenous_People_(Nigeria)"
+        },
+        "prediction": {
+          "predicted_entity_id": 9,
+          "predicted_entity_name": "Government_(Nigeria)",
+          "rank": 22,
+          "score": -1.6725496053695679
+        },
+        "ground_truth": {
+          "true_entity_id": 194,
+          "true_entity_name": "Indigenous_People_(Nigeria)"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 12,
+          "head_name": "Sergey_Viktorovich_Lavrov",
+          "relation_id": 3,
+          "relation_name": "Express_intent_to_meet_or_negotiate",
+          "tail_id": 145,
+          "tail_name": "Umar_al_Bashir"
+        },
+        "prediction": {
+          "predicted_entity_id": 6,
+          "predicted_entity_name": "John_Kerry",
+          "rank": 33,
+          "score": -3.9487361907958984
+        },
+        "ground_truth": {
+          "true_entity_id": 145,
+          "true_entity_name": "Umar_al_Bashir"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 276,
+          "head_name": "International_Government_Organizations",
+          "relation_id": 7,
+          "relation_name": "Praise_or_endorse",
+          "tail_id": 1,
+          "tail_name": "Iran"
+        },
+        "prediction": {
+          "predicted_entity_id": 8,
+          "predicted_entity_name": "Iraq",
+          "rank": 8,
+          "score": -2.805049180984497
+        },
+        "ground_truth": {
+          "true_entity_id": 1,
+          "true_entity_name": "Iran"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 73,
+          "head_name": "Poland",
+          "relation_id": 7,
+          "relation_name": "Praise_or_endorse",
+          "tail_id": 4719,
+          "tail_name": "Lawmaker_(Poland)"
+        },
+        "prediction": {
+          "predicted_entity_id": 24,
+          "predicted_entity_name": "North_Atlantic_Treaty_Organization",
+          "rank": 165,
+          "score": -2.154553174972534
+        },
+        "ground_truth": {
+          "true_entity_id": 4719,
+          "true_entity_name": "Lawmaker_(Poland)"
+        },
+        "is_correct": false,
+        "hop_category": "2-hop"
+      }
+    ],
+    "3-hop": [
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 80,
+          "head_name": "Cambodia",
+          "relation_id": 5,
+          "relation_name": "Host_a_visit",
+          "tail_id": 2756,
+          "tail_name": "Education_Ministry_(China)"
+        },
+        "prediction": {
+          "predicted_entity_id": 18,
+          "predicted_entity_name": "Thailand",
+          "rank": 3,
+          "score": -0.07077652961015701
+        },
+        "ground_truth": {
+          "true_entity_id": 2756,
+          "true_entity_name": "Education_Ministry_(China)"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 298,
+          "head_name": "Business_(Russia)",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 3403,
+          "tail_name": "Representatives_(Belarus)"
+        },
+        "prediction": {
+          "predicted_entity_id": 12,
+          "predicted_entity_name": "Sergey_Viktorovich_Lavrov",
+          "rank": 9,
+          "score": -1.4847521781921387
+        },
+        "ground_truth": {
+          "true_entity_id": 3403,
+          "true_entity_name": "Representatives_(Belarus)"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 2756,
+          "head_name": "Education_Ministry_(China)",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 541,
+          "tail_name": "Tan_Sri_Muhyiddin_Yassin"
+        },
+        "prediction": {
+          "predicted_entity_id": 1109,
+          "predicted_entity_name": "Ministry_of_Public_Security_(China)",
+          "rank": 3,
+          "score": -1.1012773513793945
+        },
+        "ground_truth": {
+          "true_entity_id": 541,
+          "true_entity_name": "Tan_Sri_Muhyiddin_Yassin"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 606,
+          "head_name": "Vanguard",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 75,
+          "tail_name": "Pope_Francis"
+        },
+        "prediction": {
+          "predicted_entity_id": 52,
+          "predicted_entity_name": "Head_of_Government_(Nigeria)",
+          "rank": 3535,
+          "score": -1.4522095918655396
+        },
+        "ground_truth": {
+          "true_entity_id": 75,
+          "true_entity_name": "Pope_Francis"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 2756,
+          "head_name": "Education_Ministry_(China)",
+          "relation_id": 4,
+          "relation_name": "Make_a_visit",
+          "tail_id": 80,
+          "tail_name": "Cambodia"
+        },
+        "prediction": {
+          "predicted_entity_id": 0,
+          "predicted_entity_name": "China",
+          "rank": 5,
+          "score": -0.5686196684837341
+        },
+        "ground_truth": {
+          "true_entity_id": 80,
+          "true_entity_name": "Cambodia"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 3403,
+          "head_name": "Representatives_(Belarus)",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 298,
+          "tail_name": "Business_(Russia)"
+        },
+        "prediction": {
+          "predicted_entity_id": 181,
+          "predicted_entity_name": "Dmitry_Anatolyevich_Medvedev",
+          "rank": 10,
+          "score": -0.42133063077926636
+        },
+        "ground_truth": {
+          "true_entity_id": 298,
+          "true_entity_name": "Business_(Russia)"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 541,
+          "head_name": "Tan_Sri_Muhyiddin_Yassin",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 2756,
+          "tail_name": "Education_Ministry_(China)"
+        },
+        "prediction": {
+          "predicted_entity_id": 1860,
+          "predicted_entity_name": "Tamil_National_Alliance",
+          "rank": 2,
+          "score": -1.258947491645813
+        },
+        "ground_truth": {
+          "true_entity_id": 2756,
+          "true_entity_name": "Education_Ministry_(China)"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 3372,
+          "head_name": "Peter_Ryan",
+          "relation_id": 8,
+          "relation_name": "Criticize_or_denounce",
+          "tail_id": 1276,
+          "tail_name": "Barnaby_Joyce"
+        },
+        "prediction": {
+          "predicted_entity_id": 214,
+          "predicted_entity_name": "Member_of_Parliament_(Australia)",
+          "rank": 27,
+          "score": -1.3075000047683716
+        },
+        "ground_truth": {
+          "true_entity_id": 1276,
+          "true_entity_name": "Barnaby_Joyce"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 5228,
+          "head_name": "Uganda_Police_Force",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 385,
+          "tail_name": "Police_(Uganda)"
+        },
+        "prediction": {
+          "predicted_entity_id": 6,
+          "predicted_entity_name": "John_Kerry",
+          "rank": 3597,
+          "score": -1.7394388914108276
+        },
+        "ground_truth": {
+          "true_entity_id": 385,
+          "true_entity_name": "Police_(Uganda)"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 726,
+          "head_name": "Lawmaker_(Russia)",
+          "relation_id": 3,
+          "relation_name": "Express_intent_to_meet_or_negotiate",
+          "tail_id": 2487,
+          "tail_name": "Government_Official_(Vietnam)"
+        },
+        "prediction": {
+          "predicted_entity_id": 24,
+          "predicted_entity_name": "North_Atlantic_Treaty_Organization",
+          "rank": 3454,
+          "score": -1.5828553438186646
+        },
+        "ground_truth": {
+          "true_entity_id": 2487,
+          "true_entity_name": "Government_Official_(Vietnam)"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 3372,
+          "head_name": "Peter_Ryan",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 1276,
+          "tail_name": "Barnaby_Joyce"
+        },
+        "prediction": {
+          "predicted_entity_id": 214,
+          "predicted_entity_name": "Member_of_Parliament_(Australia)",
+          "rank": 13,
+          "score": -1.3790531158447266
+        },
+        "ground_truth": {
+          "true_entity_id": 1276,
+          "true_entity_name": "Barnaby_Joyce"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 6,
+          "head_name": "John_Kerry",
+          "relation_id": 2,
+          "relation_name": "Make_an_appeal_or_request",
+          "tail_id": 1792,
+          "tail_name": "Government_(Qatar)"
+        },
+        "prediction": {
+          "predicted_entity_id": 0,
+          "predicted_entity_name": "China",
+          "rank": 615,
+          "score": -1.8354341983795166
+        },
+        "ground_truth": {
+          "true_entity_id": 1792,
+          "true_entity_name": "Government_(Qatar)"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 4134,
+          "head_name": "Agriculture_/_Fishing_/_Forestry_Ministry_(Vietnam)",
+          "relation_id": 2,
+          "relation_name": "Make_an_appeal_or_request",
+          "tail_id": 23,
+          "tail_name": "Vietnam"
+        },
+        "prediction": {
+          "predicted_entity_id": 23,
+          "predicted_entity_name": "Vietnam",
+          "rank": 1,
+          "score": -1.6422628164291382
+        },
+        "ground_truth": {
+          "true_entity_id": 23,
+          "true_entity_name": "Vietnam"
+        },
+        "is_correct": true,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 335,
+        "query": {
+          "head_id": 2183,
+          "head_name": "Stephen_Hadley",
+          "relation_id": 4,
+          "relation_name": "Make_a_visit",
+          "tail_id": 1229,
+          "tail_name": "Education_(United_States)"
+        },
+        "prediction": {
+          "predicted_entity_id": 0,
+          "predicted_entity_name": "China",
+          "rank": 2,
+          "score": -1.0525047779083252
+        },
+        "ground_truth": {
+          "true_entity_id": 1229,
+          "true_entity_name": "Education_(United_States)"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 335,
+        "query": {
+          "head_id": 2132,
+          "head_name": "Member_of_Parliament_(Nigeria)",
+          "relation_id": 4,
+          "relation_name": "Make_a_visit",
+          "tail_id": 66,
+          "tail_name": "Angola"
+        },
+        "prediction": {
+          "predicted_entity_id": 9,
+          "predicted_entity_name": "Government_(Nigeria)",
+          "rank": 17,
+          "score": -2.0011799335479736
+        },
+        "ground_truth": {
+          "true_entity_id": 66,
+          "true_entity_name": "Angola"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 335,
+        "query": {
+          "head_id": 4469,
+          "head_name": "Extremist_(Somalia)",
+          "relation_id": 11,
+          "relation_name": "Use_conventional_military_force",
+          "tail_id": 690,
+          "tail_name": "Employee_(Kenya)"
+        },
+        "prediction": {
+          "predicted_entity_id": 104,
+          "predicted_entity_name": "Al-Shabaab",
+          "rank": 110,
+          "score": -0.9626944065093994
+        },
+        "ground_truth": {
+          "true_entity_id": 690,
+          "true_entity_name": "Employee_(Kenya)"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 335,
+        "query": {
+          "head_id": 66,
+          "head_name": "Angola",
+          "relation_id": 5,
+          "relation_name": "Host_a_visit",
+          "tail_id": 2132,
+          "tail_name": "Member_of_Parliament_(Nigeria)"
+        },
+        "prediction": {
+          "predicted_entity_id": 12,
+          "predicted_entity_name": "Sergey_Viktorovich_Lavrov",
+          "rank": 17,
+          "score": -3.466970920562744
+        },
+        "ground_truth": {
+          "true_entity_id": 2132,
+          "true_entity_name": "Member_of_Parliament_(Nigeria)"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 335,
+        "query": {
+          "head_id": 1583,
+          "head_name": "Lapo_Pistelli",
+          "relation_id": 5,
+          "relation_name": "Host_a_visit",
+          "tail_id": 248,
+          "tail_name": "Majid_Takht_Ravanchi"
+        },
+        "prediction": {
+          "predicted_entity_id": 115,
+          "predicted_entity_name": "William_Ruto",
+          "rank": 17,
+          "score": -1.0665545463562012
+        },
+        "ground_truth": {
+          "true_entity_id": 248,
+          "true_entity_name": "Majid_Takht_Ravanchi"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 335,
+        "query": {
+          "head_id": 722,
+          "head_name": "Eritrea",
+          "relation_id": 12,
+          "relation_name": "Engage_in_negotiation",
+          "tail_id": 178,
+          "tail_name": "Federica_Mogherini"
+        },
+        "prediction": {
+          "predicted_entity_id": 722,
+          "predicted_entity_name": "Eritrea",
+          "rank": 10,
+          "score": -0.9325290322303772
+        },
+        "ground_truth": {
+          "true_entity_id": 178,
+          "true_entity_name": "Federica_Mogherini"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 335,
+        "query": {
+          "head_id": 1229,
+          "head_name": "Education_(United_States)",
+          "relation_id": 5,
+          "relation_name": "Host_a_visit",
+          "tail_id": 2183,
+          "tail_name": "Stephen_Hadley"
+        },
+        "prediction": {
+          "predicted_entity_id": 2183,
+          "predicted_entity_name": "Stephen_Hadley",
+          "rank": 1,
+          "score": -1.6454640626907349
+        },
+        "ground_truth": {
+          "true_entity_id": 2183,
+          "true_entity_name": "Stephen_Hadley"
+        },
+        "is_correct": true,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 335,
+        "query": {
+          "head_id": 1777,
+          "head_name": "Children_(Zimbabwe)",
+          "relation_id": 24,
+          "relation_name": "Demonstrate_or_rally",
+          "tail_id": 921,
+          "tail_name": "Ministry_(Zimbabwe)"
+        },
+        "prediction": {
+          "predicted_entity_id": 1667,
+          "predicted_entity_name": "Didmus_Noel_Edwin_Mutasa",
+          "rank": 2,
+          "score": -0.8285026550292969
+        },
+        "ground_truth": {
+          "true_entity_id": 921,
+          "true_entity_name": "Ministry_(Zimbabwe)"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 335,
+        "query": {
+          "head_id": 1131,
+          "head_name": "Businessperson_(United_States)",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 2262,
+          "tail_name": "Environment_Agency"
+        },
+        "prediction": {
+          "predicted_entity_id": 0,
+          "predicted_entity_name": "China",
+          "rank": 1161,
+          "score": -2.7680182456970215
+        },
+        "ground_truth": {
+          "true_entity_id": 2262,
+          "true_entity_name": "Environment_Agency"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 335,
+        "query": {
+          "head_id": 82,
+          "head_name": "Military_(Lebanon)",
+          "relation_id": 11,
+          "relation_name": "Use_conventional_military_force",
+          "tail_id": 1513,
+          "tail_name": "Islamic_Militant_(Syria)"
+        },
+        "prediction": {
+          "predicted_entity_id": 736,
+          "predicted_entity_name": "Armed_Gang_(Syria)",
+          "rank": 5,
+          "score": -0.7758687138557434
+        },
+        "ground_truth": {
+          "true_entity_id": 1513,
+          "true_entity_name": "Islamic_Militant_(Syria)"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 335,
+        "query": {
+          "head_id": 262,
+          "head_name": "Government_(France)",
+          "relation_id": 7,
+          "relation_name": "Praise_or_endorse",
+          "tail_id": 687,
+          "tail_name": "Botswana"
+        },
+        "prediction": {
+          "predicted_entity_id": 27,
+          "predicted_entity_name": "François_Hollande",
+          "rank": 930,
+          "score": -0.7516308426856995
+        },
+        "ground_truth": {
+          "true_entity_id": 687,
+          "true_entity_name": "Botswana"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 335,
+        "query": {
+          "head_id": 1513,
+          "head_name": "Islamic_Militant_(Syria)",
+          "relation_id": 10,
+          "relation_name": "Use_unconventional_violence",
+          "tail_id": 82,
+          "tail_name": "Military_(Lebanon)"
+        },
+        "prediction": {
+          "predicted_entity_id": 17,
+          "predicted_entity_name": "Citizen_(Australia)",
+          "rank": 13,
+          "score": -1.6724324226379395
+        },
+        "ground_truth": {
+          "true_entity_id": 82,
+          "true_entity_name": "Military_(Lebanon)"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 335,
+        "query": {
+          "head_id": 708,
+          "head_name": "Cleric_(Nigeria)",
+          "relation_id": 40,
+          "relation_name": "Provide_aid",
+          "tail_id": 3431,
+          "tail_name": "Secretariat_(All_Progressives_Congress)"
+        },
+        "prediction": {
+          "predicted_entity_id": 2,
+          "predicted_entity_name": "Citizen_(Nigeria)",
+          "rank": 115,
+          "score": -0.3190743923187256
+        },
+        "ground_truth": {
+          "true_entity_id": 3431,
+          "true_entity_name": "Secretariat_(All_Progressives_Congress)"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 335,
+        "query": {
+          "head_id": 248,
+          "head_name": "Majid_Takht_Ravanchi",
+          "relation_id": 4,
+          "relation_name": "Make_a_visit",
+          "tail_id": 1583,
+          "tail_name": "Lapo_Pistelli"
+        },
+        "prediction": {
+          "predicted_entity_id": 1,
+          "predicted_entity_name": "Iran",
+          "rank": 25,
+          "score": -0.16714134812355042
+        },
+        "ground_truth": {
+          "true_entity_id": 1583,
+          "true_entity_name": "Lapo_Pistelli"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 335,
+        "query": {
+          "head_id": 4102,
+          "head_name": "Yesh_Atid",
+          "relation_id": 9,
+          "relation_name": "Accuse",
+          "tail_id": 22,
+          "tail_name": "Benjamin_Netanyahu"
+        },
+        "prediction": {
+          "predicted_entity_id": 22,
+          "predicted_entity_name": "Benjamin_Netanyahu",
+          "rank": 1,
+          "score": -0.7995674014091492
+        },
+        "ground_truth": {
+          "true_entity_id": 22,
+          "true_entity_name": "Benjamin_Netanyahu"
+        },
+        "is_correct": true,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 335,
+        "query": {
+          "head_id": 178,
+          "head_name": "Federica_Mogherini",
+          "relation_id": 12,
+          "relation_name": "Engage_in_negotiation",
+          "tail_id": 722,
+          "tail_name": "Eritrea"
+        },
+        "prediction": {
+          "predicted_entity_id": 12,
+          "predicted_entity_name": "Sergey_Viktorovich_Lavrov",
+          "rank": 18,
+          "score": -1.1547346115112305
+        },
+        "ground_truth": {
+          "true_entity_id": 722,
+          "true_entity_name": "Eritrea"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 336,
+        "query": {
+          "head_id": 248,
+          "head_name": "Majid_Takht_Ravanchi",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 1583,
+          "tail_name": "Lapo_Pistelli"
+        },
+        "prediction": {
+          "predicted_entity_id": 1583,
+          "predicted_entity_name": "Lapo_Pistelli",
+          "rank": 1,
+          "score": -1.2126922607421875
+        },
+        "ground_truth": {
+          "true_entity_id": 1583,
+          "true_entity_name": "Lapo_Pistelli"
+        },
+        "is_correct": true,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 336,
+        "query": {
+          "head_id": 760,
+          "head_name": "Joao_Lourenco",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 2949,
+          "tail_name": "Roberta_Pinotti"
+        },
+        "prediction": {
+          "predicted_entity_id": 2541,
+          "predicted_entity_name": "Lawyer/Attorney_(Dominican_Republic)",
+          "rank": 67,
+          "score": -1.831668496131897
+        },
+        "ground_truth": {
+          "true_entity_id": 2949,
+          "true_entity_name": "Roberta_Pinotti"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 336,
+        "query": {
+          "head_id": 1408,
+          "head_name": "Terry_McAuliffe",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 311,
+          "tail_name": "Business_(Canada)"
+        },
+        "prediction": {
+          "predicted_entity_id": 0,
+          "predicted_entity_name": "China",
+          "rank": 492,
+          "score": -0.186395525932312
+        },
+        "ground_truth": {
+          "true_entity_id": 311,
+          "true_entity_name": "Business_(Canada)"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 336,
+        "query": {
+          "head_id": 258,
+          "head_name": "Jens_Stoltenberg",
+          "relation_id": 13,
+          "relation_name": "Express_intent_to_cooperate",
+          "tail_id": 77,
+          "tail_name": "Haider_Al-Abadi"
+        },
+        "prediction": {
+          "predicted_entity_id": 24,
+          "predicted_entity_name": "North_Atlantic_Treaty_Organization",
+          "rank": 46,
+          "score": -0.6669716835021973
+        },
+        "ground_truth": {
+          "true_entity_id": 77,
+          "true_entity_name": "Haider_Al-Abadi"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 336,
+        "query": {
+          "head_id": 3246,
+          "head_name": "Justice_Department/Ministery_(France)",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 157,
+          "tail_name": "Other_Authorities_/_Officials_(China)"
+        },
+        "prediction": {
+          "predicted_entity_id": 262,
+          "predicted_entity_name": "Government_(France)",
+          "rank": 928,
+          "score": -1.6584163904190063
+        },
+        "ground_truth": {
+          "true_entity_id": 157,
+          "true_entity_name": "Other_Authorities_/_Officials_(China)"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 336,
+        "query": {
+          "head_id": 258,
+          "head_name": "Jens_Stoltenberg",
+          "relation_id": 27,
+          "relation_name": "Meet_at_a_'third'_location",
+          "tail_id": 77,
+          "tail_name": "Haider_Al-Abadi"
+        },
+        "prediction": {
+          "predicted_entity_id": 24,
+          "predicted_entity_name": "North_Atlantic_Treaty_Organization",
+          "rank": 7,
+          "score": -0.9690209627151489
+        },
+        "ground_truth": {
+          "true_entity_id": 77,
+          "true_entity_name": "Haider_Al-Abadi"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 336,
+        "query": {
+          "head_id": 2949,
+          "head_name": "Roberta_Pinotti",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 760,
+          "tail_name": "Joao_Lourenco"
+        },
+        "prediction": {
+          "predicted_entity_id": 245,
+          "predicted_entity_name": "Nabih_Berri",
+          "rank": 62,
+          "score": -0.5681228637695312
+        },
+        "ground_truth": {
+          "true_entity_id": 760,
+          "true_entity_name": "Joao_Lourenco"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 336,
+        "query": {
+          "head_id": 1513,
+          "head_name": "Islamic_Militant_(Syria)",
+          "relation_id": 10,
+          "relation_name": "Use_unconventional_violence",
+          "tail_id": 82,
+          "tail_name": "Military_(Lebanon)"
+        },
+        "prediction": {
+          "predicted_entity_id": 82,
+          "predicted_entity_name": "Military_(Lebanon)",
+          "rank": 1,
+          "score": -1.2046922445297241
+        },
+        "ground_truth": {
+          "true_entity_id": 82,
+          "true_entity_name": "Military_(Lebanon)"
+        },
+        "is_correct": true,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 336,
+        "query": {
+          "head_id": 77,
+          "head_name": "Haider_Al-Abadi",
+          "relation_id": 27,
+          "relation_name": "Meet_at_a_'third'_location",
+          "tail_id": 258,
+          "tail_name": "Jens_Stoltenberg"
+        },
+        "prediction": {
+          "predicted_entity_id": 77,
+          "predicted_entity_name": "Haider_Al-Abadi",
+          "rank": 6,
+          "score": -1.4365438222885132
+        },
+        "ground_truth": {
+          "true_entity_id": 258,
+          "true_entity_name": "Jens_Stoltenberg"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 336,
+        "query": {
+          "head_id": 69,
+          "head_name": "Tajikistan",
+          "relation_id": 44,
+          "relation_name": "Confiscate_property",
+          "tail_id": 2733,
+          "tail_name": "Criminal_(Kyrgyzstan)"
+        },
+        "prediction": {
+          "predicted_entity_id": 1,
+          "predicted_entity_name": "Iran",
+          "rank": 622,
+          "score": -0.4620596766471863
+        },
+        "ground_truth": {
+          "true_entity_id": 2733,
+          "true_entity_name": "Criminal_(Kyrgyzstan)"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 336,
+        "query": {
+          "head_id": 25,
+          "head_name": "UN_Security_Council",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 1565,
+          "tail_name": "Defense_/_Security_Ministry_(Slovakia)"
+        },
+        "prediction": {
+          "predicted_entity_id": 12,
+          "predicted_entity_name": "Sergey_Viktorovich_Lavrov",
+          "rank": 9,
+          "score": -1.6807852983474731
+        },
+        "ground_truth": {
+          "true_entity_id": 1565,
+          "true_entity_name": "Defense_/_Security_Ministry_(Slovakia)"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 336,
+        "query": {
+          "head_id": 2938,
+          "head_name": "Rand_Paul",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 8,
+          "tail_name": "Iraq"
+        },
+        "prediction": {
+          "predicted_entity_id": 415,
+          "predicted_entity_name": "Government_(Mexico)",
+          "rank": 68,
+          "score": -2.385948657989502
+        },
+        "ground_truth": {
+          "true_entity_id": 8,
+          "true_entity_name": "Iraq"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 336,
+        "query": {
+          "head_id": 2406,
+          "head_name": "Al-Azhar_University",
+          "relation_id": 8,
+          "relation_name": "Criticize_or_denounce",
+          "tail_id": 903,
+          "tail_name": "Terrorist_Leader_(Syria)"
+        },
+        "prediction": {
+          "predicted_entity_id": 64,
+          "predicted_entity_name": "Police_(Egypt)",
+          "rank": 3302,
+          "score": -1.9569604396820068
+        },
+        "ground_truth": {
+          "true_entity_id": 903,
+          "true_entity_name": "Terrorist_Leader_(Syria)"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 336,
+        "query": {
+          "head_id": 82,
+          "head_name": "Military_(Lebanon)",
+          "relation_id": 11,
+          "relation_name": "Use_conventional_military_force",
+          "tail_id": 1513,
+          "tail_name": "Islamic_Militant_(Syria)"
+        },
+        "prediction": {
+          "predicted_entity_id": 736,
+          "predicted_entity_name": "Armed_Gang_(Syria)",
+          "rank": 2,
+          "score": -0.6291918158531189
+        },
+        "ground_truth": {
+          "true_entity_id": 1513,
+          "true_entity_name": "Islamic_Militant_(Syria)"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 336,
+        "query": {
+          "head_id": 1565,
+          "head_name": "Defense_/_Security_Ministry_(Slovakia)",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 25,
+          "tail_name": "UN_Security_Council"
+        },
+        "prediction": {
+          "predicted_entity_id": 39,
+          "predicted_entity_name": "Foreign_Affairs_(United_States)",
+          "rank": 20,
+          "score": -1.6826505661010742
+        },
+        "ground_truth": {
+          "true_entity_id": 25,
+          "true_entity_name": "UN_Security_Council"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 336,
+        "query": {
+          "head_id": 1583,
+          "head_name": "Lapo_Pistelli",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 248,
+          "tail_name": "Majid_Takht_Ravanchi"
+        },
+        "prediction": {
+          "predicted_entity_id": 25,
+          "predicted_entity_name": "UN_Security_Council",
+          "rank": 2,
+          "score": -1.2052959203720093
+        },
+        "ground_truth": {
+          "true_entity_id": 248,
+          "true_entity_name": "Majid_Takht_Ravanchi"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 337,
+        "query": {
+          "head_id": 4073,
+          "head_name": "Transport_Canada",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 2170,
+          "tail_name": "Regulator_(Canada)"
+        },
+        "prediction": {
+          "predicted_entity_id": 34,
+          "predicted_entity_name": "Canada",
+          "rank": 40,
+          "score": -0.7042746543884277
+        },
+        "ground_truth": {
+          "true_entity_id": 2170,
+          "true_entity_name": "Regulator_(Canada)"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 337,
+        "query": {
+          "head_id": 681,
+          "head_name": "Head_of_Government_(Bulgaria)",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 1363,
+          "tail_name": "Elmar_Brok"
+        },
+        "prediction": {
+          "predicted_entity_id": 619,
+          "predicted_entity_name": "Foreign_Affairs_(Georgia)",
+          "rank": 7,
+          "score": -1.0376182794570923
+        },
+        "ground_truth": {
+          "true_entity_id": 1363,
+          "true_entity_name": "Elmar_Brok"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 337,
+        "query": {
+          "head_id": 486,
+          "head_name": "Ministry_(Tanzania)",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 145,
+          "tail_name": "Umar_al_Bashir"
+        },
+        "prediction": {
+          "predicted_entity_id": 486,
+          "predicted_entity_name": "Ministry_(Tanzania)",
+          "rank": 78,
+          "score": -0.146680548787117
+        },
+        "ground_truth": {
+          "true_entity_id": 145,
+          "true_entity_name": "Umar_al_Bashir"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 337,
+        "query": {
+          "head_id": 1514,
+          "head_name": "Joseph_Katema",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 4107,
+          "tail_name": "Zambia_National_Broadcasting_Corporation"
+        },
+        "prediction": {
+          "predicted_entity_id": 2853,
+          "predicted_entity_name": "Media_(Zambia)",
+          "rank": 135,
+          "score": -1.691384196281433
+        },
+        "ground_truth": {
+          "true_entity_id": 4107,
+          "true_entity_name": "Zambia_National_Broadcasting_Corporation"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      },
+      {
+        "timestamp": 337,
+        "query": {
+          "head_id": 271,
+          "head_name": "Alexis_Tsipras",
+          "relation_id": 3,
+          "relation_name": "Express_intent_to_meet_or_negotiate",
+          "tail_id": 556,
+          "tail_name": "Tomislav_Nikolić"
+        },
+        "prediction": {
+          "predicted_entity_id": 131,
+          "predicted_entity_name": "Evangelos_Venizelos",
+          "rank": 1390,
+          "score": -0.7265706062316895
+        },
+        "ground_truth": {
+          "true_entity_id": 556,
+          "true_entity_name": "Tomislav_Nikolić"
+        },
+        "is_correct": false,
+        "hop_category": "3-hop"
+      }
+    ],
+    "4+hop": [
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 170,
+          "head_name": "Police_(United_States)",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 4369,
+          "tail_name": "David_Miller"
+        },
+        "prediction": {
+          "predicted_entity_id": 2558,
+          "predicted_entity_name": "Mazda",
+          "rank": 5815,
+          "score": -2.6188454627990723
+        },
+        "ground_truth": {
+          "true_entity_id": 4369,
+          "true_entity_name": "David_Miller"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 1058,
+          "head_name": "James_Ongwae",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 1366,
+          "tail_name": "Government_(Poland)"
+        },
+        "prediction": {
+          "predicted_entity_id": 1137,
+          "predicted_entity_name": "Indigenous_People_(Somalia)",
+          "rank": 18,
+          "score": -1.1384685039520264
+        },
+        "ground_truth": {
+          "true_entity_id": 1366,
+          "true_entity_name": "Government_(Poland)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 334,
+        "query": {
+          "head_id": 1366,
+          "head_name": "Government_(Poland)",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 1058,
+          "tail_name": "James_Ongwae"
+        },
+        "prediction": {
+          "predicted_entity_id": 91,
+          "predicted_entity_name": "Protester_(Hong_Kong)",
+          "rank": 39,
+          "score": -2.1514036655426025
+        },
+        "ground_truth": {
+          "true_entity_id": 1058,
+          "true_entity_name": "James_Ongwae"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 335,
+        "query": {
+          "head_id": 2541,
+          "head_name": "Lawyer/Attorney_(Dominican_Republic)",
+          "relation_id": 7,
+          "relation_name": "Praise_or_endorse",
+          "tail_id": 1510,
+          "tail_name": "Holy_See"
+        },
+        "prediction": {
+          "predicted_entity_id": 1993,
+          "predicted_entity_name": "Police_(Dominican_Republic)",
+          "rank": 2668,
+          "score": -1.3685280084609985
+        },
+        "ground_truth": {
+          "true_entity_id": 1510,
+          "true_entity_name": "Holy_See"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 335,
+        "query": {
+          "head_id": 1777,
+          "head_name": "Children_(Zimbabwe)",
+          "relation_id": 24,
+          "relation_name": "Demonstrate_or_rally",
+          "tail_id": 3894,
+          "tail_name": "Ministry_of_Mining_(Zimbabwe)"
+        },
+        "prediction": {
+          "predicted_entity_id": 1667,
+          "predicted_entity_name": "Didmus_Noel_Edwin_Mutasa",
+          "rank": 190,
+          "score": -0.8285026550292969
+        },
+        "ground_truth": {
+          "true_entity_id": 3894,
+          "true_entity_name": "Ministry_of_Mining_(Zimbabwe)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 335,
+        "query": {
+          "head_id": 170,
+          "head_name": "Police_(United_States)",
+          "relation_id": 18,
+          "relation_name": "Investigate",
+          "tail_id": 1281,
+          "tail_name": "Citizen_(Mauritius)"
+        },
+        "prediction": {
+          "predicted_entity_id": 34,
+          "predicted_entity_name": "Canada",
+          "rank": 450,
+          "score": -2.6143808364868164
+        },
+        "ground_truth": {
+          "true_entity_id": 1281,
+          "true_entity_name": "Citizen_(Mauritius)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 336,
+        "query": {
+          "head_id": 531,
+          "head_name": "Shivraj_Singh_Chouhan",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 3406,
+          "tail_name": "Representatives_(Non-Governmental_Organizations)"
+        },
+        "prediction": {
+          "predicted_entity_id": 3406,
+          "predicted_entity_name": "Representatives_(Non-Governmental_Organizations)",
+          "rank": 1,
+          "score": -1.0411616563796997
+        },
+        "ground_truth": {
+          "true_entity_id": 3406,
+          "true_entity_name": "Representatives_(Non-Governmental_Organizations)"
+        },
+        "is_correct": true,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 336,
+        "query": {
+          "head_id": 2541,
+          "head_name": "Lawyer/Attorney_(Dominican_Republic)",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 75,
+          "tail_name": "Pope_Francis"
+        },
+        "prediction": {
+          "predicted_entity_id": 1484,
+          "predicted_entity_name": "Business_(Belgium)",
+          "rank": 9,
+          "score": -0.7566190958023071
+        },
+        "ground_truth": {
+          "true_entity_id": 75,
+          "true_entity_name": "Pope_Francis"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 336,
+        "query": {
+          "head_id": 3406,
+          "head_name": "Representatives_(Non-Governmental_Organizations)",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 531,
+          "tail_name": "Shivraj_Singh_Chouhan"
+        },
+        "prediction": {
+          "predicted_entity_id": 738,
+          "predicted_entity_name": "Daniel_Mitov",
+          "rank": 2,
+          "score": -1.6159788370132446
+        },
+        "ground_truth": {
+          "true_entity_id": 531,
+          "true_entity_name": "Shivraj_Singh_Chouhan"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 336,
+        "query": {
+          "head_id": 75,
+          "head_name": "Pope_Francis",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 2541,
+          "tail_name": "Lawyer/Attorney_(Dominican_Republic)"
+        },
+        "prediction": {
+          "predicted_entity_id": 63,
+          "predicted_entity_name": "Middle_East",
+          "rank": 5,
+          "score": -1.1948491334915161
+        },
+        "ground_truth": {
+          "true_entity_id": 2541,
+          "true_entity_name": "Lawyer/Attorney_(Dominican_Republic)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 337,
+        "query": {
+          "head_id": 4233,
+          "head_name": "Bernadette_Meehan",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 518,
+          "tail_name": "Gambia"
+        },
+        "prediction": {
+          "predicted_entity_id": 8,
+          "predicted_entity_name": "Iraq",
+          "rank": 533,
+          "score": -3.6856281757354736
+        },
+        "ground_truth": {
+          "true_entity_id": 518,
+          "true_entity_name": "Gambia"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 338,
+        "query": {
+          "head_id": 3420,
+          "head_name": "Rose_Gottemoeller",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 2712,
+          "tail_name": "Chief_of_Staff_(Ukraine)"
+        },
+        "prediction": {
+          "predicted_entity_id": 5,
+          "predicted_entity_name": "Japan",
+          "rank": 4,
+          "score": -0.9520938396453857
+        },
+        "ground_truth": {
+          "true_entity_id": 2712,
+          "true_entity_name": "Chief_of_Staff_(Ukraine)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 338,
+        "query": {
+          "head_id": 2712,
+          "head_name": "Chief_of_Staff_(Ukraine)",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 3420,
+          "tail_name": "Rose_Gottemoeller"
+        },
+        "prediction": {
+          "predicted_entity_id": 131,
+          "predicted_entity_name": "Evangelos_Venizelos",
+          "rank": 14,
+          "score": -1.7921245098114014
+        },
+        "ground_truth": {
+          "true_entity_id": 3420,
+          "true_entity_name": "Rose_Gottemoeller"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 338,
+        "query": {
+          "head_id": 1220,
+          "head_name": "Armed_Band_(Lebanon)",
+          "relation_id": 2,
+          "relation_name": "Make_an_appeal_or_request",
+          "tail_id": 2476,
+          "tail_name": "Employee_(Lebanon)"
+        },
+        "prediction": {
+          "predicted_entity_id": 82,
+          "predicted_entity_name": "Military_(Lebanon)",
+          "rank": 10,
+          "score": -0.5110927820205688
+        },
+        "ground_truth": {
+          "true_entity_id": 2476,
+          "true_entity_name": "Employee_(Lebanon)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 339,
+        "query": {
+          "head_id": 1065,
+          "head_name": "Military_Personnel_-_Special_(United_States)",
+          "relation_id": 11,
+          "relation_name": "Use_conventional_military_force",
+          "tail_id": 1837,
+          "tail_name": "Pierre_Korkie"
+        },
+        "prediction": {
+          "predicted_entity_id": 104,
+          "predicted_entity_name": "Al-Shabaab",
+          "rank": 2797,
+          "score": -2.0517594814300537
+        },
+        "ground_truth": {
+          "true_entity_id": 1837,
+          "true_entity_name": "Pierre_Korkie"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 339,
+        "query": {
+          "head_id": 4,
+          "head_name": "Barack_Obama",
+          "relation_id": 8,
+          "relation_name": "Criticize_or_denounce",
+          "tail_id": 3299,
+          "tail_name": "Militant_(Al_Qaeda_in_the_Arabian_Peninsula)"
+        },
+        "prediction": {
+          "predicted_entity_id": 8,
+          "predicted_entity_name": "Iraq",
+          "rank": 4976,
+          "score": -1.839983582496643
+        },
+        "ground_truth": {
+          "true_entity_id": 3299,
+          "true_entity_name": "Militant_(Al_Qaeda_in_the_Arabian_Peninsula)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 340,
+        "query": {
+          "head_id": 3315,
+          "head_name": "Ministry_(Belarus)",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 3077,
+          "tail_name": "Business_(Belarus)"
+        },
+        "prediction": {
+          "predicted_entity_id": 1933,
+          "predicted_entity_name": "Government_(Belarus)",
+          "rank": 3,
+          "score": -1.7980608940124512
+        },
+        "ground_truth": {
+          "true_entity_id": 3077,
+          "true_entity_name": "Business_(Belarus)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 340,
+        "query": {
+          "head_id": 1935,
+          "head_name": "Government_(Ecuador)",
+          "relation_id": 79,
+          "relation_name": "Impose_restrictions_on_political_freedoms",
+          "tail_id": 1967,
+          "tail_name": "Member_of_Parliament_(Germany)"
+        },
+        "prediction": {
+          "predicted_entity_id": 631,
+          "predicted_entity_name": "Rafael_Correa",
+          "rank": 3934,
+          "score": -0.781562864780426
+        },
+        "ground_truth": {
+          "true_entity_id": 1967,
+          "true_entity_name": "Member_of_Parliament_(Germany)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 340,
+        "query": {
+          "head_id": 1197,
+          "head_name": "Military_(Jordan)",
+          "relation_id": 7,
+          "relation_name": "Praise_or_endorse",
+          "tail_id": 3459,
+          "tail_name": "Terrorist_Organization_(Syria)"
+        },
+        "prediction": {
+          "predicted_entity_id": 594,
+          "predicted_entity_name": "Ministry_(Jordan)",
+          "rank": 3009,
+          "score": -2.932096481323242
+        },
+        "ground_truth": {
+          "true_entity_id": 3459,
+          "true_entity_name": "Terrorist_Organization_(Syria)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 341,
+        "query": {
+          "head_id": 225,
+          "head_name": "Military_Personnel_-_Special_(India)",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 3087,
+          "tail_name": "Central_Security_Forces"
+        },
+        "prediction": {
+          "predicted_entity_id": 56,
+          "predicted_entity_name": "Employee_(India)",
+          "rank": 4076,
+          "score": -1.9940015077590942
+        },
+        "ground_truth": {
+          "true_entity_id": 3087,
+          "true_entity_name": "Central_Security_Forces"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 341,
+        "query": {
+          "head_id": 2880,
+          "head_name": "Ministry_of_Health",
+          "relation_id": 3,
+          "relation_name": "Express_intent_to_meet_or_negotiate",
+          "tail_id": 438,
+          "tail_name": "Citizen_(Bulgaria)"
+        },
+        "prediction": {
+          "predicted_entity_id": 438,
+          "predicted_entity_name": "Citizen_(Bulgaria)",
+          "rank": 1,
+          "score": -1.245922327041626
+        },
+        "ground_truth": {
+          "true_entity_id": 438,
+          "true_entity_name": "Citizen_(Bulgaria)"
+        },
+        "is_correct": true,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 341,
+        "query": {
+          "head_id": 823,
+          "head_name": "Police_(Jordan)",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 4784,
+          "tail_name": "Member_of_Legislative_(Govt)_(Jordan)"
+        },
+        "prediction": {
+          "predicted_entity_id": 594,
+          "predicted_entity_name": "Ministry_(Jordan)",
+          "rank": 688,
+          "score": -1.9780752658843994
+        },
+        "ground_truth": {
+          "true_entity_id": 4784,
+          "true_entity_name": "Member_of_Legislative_(Govt)_(Jordan)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 342,
+        "query": {
+          "head_id": 152,
+          "head_name": "Amnesty_International",
+          "relation_id": 8,
+          "relation_name": "Criticize_or_denounce",
+          "tail_id": 2748,
+          "tail_name": "Domestic_Affairs_(Algeria)"
+        },
+        "prediction": {
+          "predicted_entity_id": 0,
+          "predicted_entity_name": "China",
+          "rank": 2352,
+          "score": -2.6369264125823975
+        },
+        "ground_truth": {
+          "true_entity_id": 2748,
+          "true_entity_name": "Domestic_Affairs_(Algeria)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 343,
+        "query": {
+          "head_id": 2670,
+          "head_name": "Activist_(Cuba)",
+          "relation_id": 28,
+          "relation_name": "Engage_in_symbolic_act",
+          "tail_id": 261,
+          "tail_name": "Raúl_Castro"
+        },
+        "prediction": {
+          "predicted_entity_id": 1008,
+          "predicted_entity_name": "Serge_Lazarevic",
+          "rank": 54,
+          "score": -3.282702684402466
+        },
+        "ground_truth": {
+          "true_entity_id": 261,
+          "true_entity_name": "Raúl_Castro"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 343,
+        "query": {
+          "head_id": 3229,
+          "head_name": "Intelligence_and_Security_Committee",
+          "relation_id": 18,
+          "relation_name": "Investigate",
+          "tail_id": 5137,
+          "tail_name": "Senate_(United_Kingdom)"
+        },
+        "prediction": {
+          "predicted_entity_id": 55,
+          "predicted_entity_name": "Citizen_(United_Kingdom)",
+          "rank": 64,
+          "score": -0.9178397059440613
+        },
+        "ground_truth": {
+          "true_entity_id": 5137,
+          "true_entity_name": "Senate_(United_Kingdom)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 344,
+        "query": {
+          "head_id": 1065,
+          "head_name": "Military_Personnel_-_Special_(United_States)",
+          "relation_id": 11,
+          "relation_name": "Use_conventional_military_force",
+          "tail_id": 1837,
+          "tail_name": "Pierre_Korkie"
+        },
+        "prediction": {
+          "predicted_entity_id": 104,
+          "predicted_entity_name": "Al-Shabaab",
+          "rank": 234,
+          "score": -1.658517599105835
+        },
+        "ground_truth": {
+          "true_entity_id": 1837,
+          "true_entity_name": "Pierre_Korkie"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 347,
+        "query": {
+          "head_id": 4663,
+          "head_name": "John_Major",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 3229,
+          "tail_name": "Intelligence_and_Security_Committee"
+        },
+        "prediction": {
+          "predicted_entity_id": 507,
+          "predicted_entity_name": "Alex_Salmond",
+          "rank": 286,
+          "score": -1.3594521284103394
+        },
+        "ground_truth": {
+          "true_entity_id": 3229,
+          "true_entity_name": "Intelligence_and_Security_Committee"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 347,
+        "query": {
+          "head_id": 10,
+          "head_name": "France",
+          "relation_id": 11,
+          "relation_name": "Use_conventional_military_force",
+          "tail_id": 4618,
+          "tail_name": "Insurgent_(Algeria)"
+        },
+        "prediction": {
+          "predicted_entity_id": 117,
+          "predicted_entity_name": "Armed_Rebel_(Syria)",
+          "rank": 1185,
+          "score": -1.9673237800598145
+        },
+        "ground_truth": {
+          "true_entity_id": 4618,
+          "true_entity_name": "Insurgent_(Algeria)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 348,
+        "query": {
+          "head_id": 595,
+          "head_name": "Office_of_the_United_Nations_High_Commissioner_for_Human_Rights",
+          "relation_id": 70,
+          "relation_name": "Rally_opposition_against",
+          "tail_id": 1781,
+          "tail_name": "Congress_(Brazil)"
+        },
+        "prediction": {
+          "predicted_entity_id": 78,
+          "predicted_entity_name": "Citizen_(Yemen)",
+          "rank": 2340,
+          "score": -1.7830259799957275
+        },
+        "ground_truth": {
+          "true_entity_id": 1781,
+          "true_entity_name": "Congress_(Brazil)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 348,
+        "query": {
+          "head_id": 36,
+          "head_name": "Government_(Kenya)",
+          "relation_id": 17,
+          "relation_name": "Sign_formal_agreement",
+          "tail_id": 3596,
+          "tail_name": "Company_-_Owner_or_Operator_(Netherlands)"
+        },
+        "prediction": {
+          "predicted_entity_id": 36,
+          "predicted_entity_name": "Government_(Kenya)",
+          "rank": 2,
+          "score": -0.7001665234565735
+        },
+        "ground_truth": {
+          "true_entity_id": 3596,
+          "true_entity_name": "Company_-_Owner_or_Operator_(Netherlands)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 348,
+        "query": {
+          "head_id": 3596,
+          "head_name": "Company_-_Owner_or_Operator_(Netherlands)",
+          "relation_id": 17,
+          "relation_name": "Sign_formal_agreement",
+          "tail_id": 36,
+          "tail_name": "Government_(Kenya)"
+        },
+        "prediction": {
+          "predicted_entity_id": 161,
+          "predicted_entity_name": "Head_of_Government_(Afghanistan)",
+          "rank": 3,
+          "score": -1.7789082527160645
+        },
+        "ground_truth": {
+          "true_entity_id": 36,
+          "true_entity_name": "Government_(Kenya)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 348,
+        "query": {
+          "head_id": 4106,
+          "head_name": "Yukos",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 4100,
+          "tail_name": "Yabloko"
+        },
+        "prediction": {
+          "predicted_entity_id": 303,
+          "predicted_entity_name": "Mevlut_Cavusoglu",
+          "rank": 2,
+          "score": -1.262545108795166
+        },
+        "ground_truth": {
+          "true_entity_id": 4100,
+          "true_entity_name": "Yabloko"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 348,
+        "query": {
+          "head_id": 4100,
+          "head_name": "Yabloko",
+          "relation_id": 1,
+          "relation_name": "Consult",
+          "tail_id": 4106,
+          "tail_name": "Yukos"
+        },
+        "prediction": {
+          "predicted_entity_id": 1756,
+          "predicted_entity_name": "Sunday_Times",
+          "rank": 3,
+          "score": -1.928644061088562
+        },
+        "ground_truth": {
+          "true_entity_id": 4106,
+          "true_entity_name": "Yukos"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 348,
+        "query": {
+          "head_id": 4342,
+          "head_name": "Constitutional_Court_(Albania)",
+          "relation_id": 20,
+          "relation_name": "Reject",
+          "tail_id": 709,
+          "tail_name": "Democratic_Party"
+        },
+        "prediction": {
+          "predicted_entity_id": 4342,
+          "predicted_entity_name": "Constitutional_Court_(Albania)",
+          "rank": 4948,
+          "score": -2.172813653945923
+        },
+        "ground_truth": {
+          "true_entity_id": 709,
+          "true_entity_name": "Democratic_Party"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 349,
+        "query": {
+          "head_id": 2981,
+          "head_name": "Terrorist_(Taliban)",
+          "relation_id": 10,
+          "relation_name": "Use_unconventional_violence",
+          "tail_id": 588,
+          "tail_name": "Education_(Pakistan)"
+        },
+        "prediction": {
+          "predicted_entity_id": 15,
+          "predicted_entity_name": "Afghanistan",
+          "rank": 84,
+          "score": -1.0262608528137207
+        },
+        "ground_truth": {
+          "true_entity_id": 588,
+          "true_entity_name": "Education_(Pakistan)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 349,
+        "query": {
+          "head_id": 152,
+          "head_name": "Amnesty_International",
+          "relation_id": 2,
+          "relation_name": "Make_an_appeal_or_request",
+          "tail_id": 1990,
+          "tail_name": "Party_Member_(Sri_Lanka)"
+        },
+        "prediction": {
+          "predicted_entity_id": 233,
+          "predicted_entity_name": "Other_Authorities_/_Officials_(Egypt)",
+          "rank": 3352,
+          "score": -2.81567645072937
+        },
+        "ground_truth": {
+          "true_entity_id": 1990,
+          "true_entity_name": "Party_Member_(Sri_Lanka)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 350,
+        "query": {
+          "head_id": 941,
+          "head_name": "Congress_of_South_African_Trade_Unions",
+          "relation_id": 8,
+          "relation_name": "Criticize_or_denounce",
+          "tail_id": 588,
+          "tail_name": "Education_(Pakistan)"
+        },
+        "prediction": {
+          "predicted_entity_id": 223,
+          "predicted_entity_name": "Government_(South_Africa)",
+          "rank": 6354,
+          "score": -1.347333550453186
+        },
+        "ground_truth": {
+          "true_entity_id": 588,
+          "true_entity_name": "Education_(Pakistan)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 350,
+        "query": {
+          "head_id": 4685,
+          "head_name": "Kahinda_Otafiire",
+          "relation_id": 8,
+          "relation_name": "Criticize_or_denounce",
+          "tail_id": 1724,
+          "tail_name": "National_Resistance_Movement"
+        },
+        "prediction": {
+          "predicted_entity_id": 0,
+          "predicted_entity_name": "China",
+          "rank": 6278,
+          "score": -1.334638237953186
+        },
+        "ground_truth": {
+          "true_entity_id": 1724,
+          "true_entity_name": "National_Resistance_Movement"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 350,
+        "query": {
+          "head_id": 2795,
+          "head_name": "Head_of_Government_(Mozambique)",
+          "relation_id": 7,
+          "relation_name": "Praise_or_endorse",
+          "tail_id": 1336,
+          "tail_name": "Sahrawi_people"
+        },
+        "prediction": {
+          "predicted_entity_id": 234,
+          "predicted_entity_name": "Michael_Sata",
+          "rank": 3850,
+          "score": -2.7914321422576904
+        },
+        "ground_truth": {
+          "true_entity_id": 1336,
+          "true_entity_name": "Sahrawi_people"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 351,
+        "query": {
+          "head_id": 3018,
+          "head_name": "Activist_(Belarus)",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 1933,
+          "tail_name": "Government_(Belarus)"
+        },
+        "prediction": {
+          "predicted_entity_id": 1987,
+          "predicted_entity_name": "Party_Member_(Belarus)",
+          "rank": 4,
+          "score": -2.4998481273651123
+        },
+        "ground_truth": {
+          "true_entity_id": 1933,
+          "true_entity_name": "Government_(Belarus)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 351,
+        "query": {
+          "head_id": 2981,
+          "head_name": "Terrorist_(Taliban)",
+          "relation_id": 10,
+          "relation_name": "Use_unconventional_violence",
+          "tail_id": 588,
+          "tail_name": "Education_(Pakistan)"
+        },
+        "prediction": {
+          "predicted_entity_id": 15,
+          "predicted_entity_name": "Afghanistan",
+          "rank": 2,
+          "score": -1.4572594165802002
+        },
+        "ground_truth": {
+          "true_entity_id": 588,
+          "true_entity_name": "Education_(Pakistan)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 351,
+        "query": {
+          "head_id": 1556,
+          "head_name": "Cabinet_/_Council_of_Ministers_/_Advisors_(Jordan)",
+          "relation_id": 18,
+          "relation_name": "Investigate",
+          "tail_id": 4293,
+          "tail_name": "Children_(Jordan)"
+        },
+        "prediction": {
+          "predicted_entity_id": 823,
+          "predicted_entity_name": "Police_(Jordan)",
+          "rank": 23,
+          "score": -1.7234290838241577
+        },
+        "ground_truth": {
+          "true_entity_id": 4293,
+          "true_entity_name": "Children_(Jordan)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 352,
+        "query": {
+          "head_id": 1185,
+          "head_name": "Greenpeace",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 1245,
+          "tail_name": "Lawyer/Attorney_(Peru)"
+        },
+        "prediction": {
+          "predicted_entity_id": 1185,
+          "predicted_entity_name": "Greenpeace",
+          "rank": 4431,
+          "score": -2.802701473236084
+        },
+        "ground_truth": {
+          "true_entity_id": 1245,
+          "true_entity_name": "Lawyer/Attorney_(Peru)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 352,
+        "query": {
+          "head_id": 1245,
+          "head_name": "Lawyer/Attorney_(Peru)",
+          "relation_id": 18,
+          "relation_name": "Investigate",
+          "tail_id": 1185,
+          "tail_name": "Greenpeace"
+        },
+        "prediction": {
+          "predicted_entity_id": 914,
+          "predicted_entity_name": "Head_of_Government_(Peru)",
+          "rank": 2807,
+          "score": -2.081592082977295
+        },
+        "ground_truth": {
+          "true_entity_id": 1185,
+          "true_entity_name": "Greenpeace"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 353,
+        "query": {
+          "head_id": 13,
+          "head_name": "Xi_Jinping",
+          "relation_id": 2,
+          "relation_name": "Make_an_appeal_or_request",
+          "tail_id": 3097,
+          "tail_name": "Citizen_(Macao)"
+        },
+        "prediction": {
+          "predicted_entity_id": 229,
+          "predicted_entity_name": "Military_(China)",
+          "rank": 2278,
+          "score": -1.1671626567840576
+        },
+        "ground_truth": {
+          "true_entity_id": 3097,
+          "true_entity_name": "Citizen_(Macao)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 353,
+        "query": {
+          "head_id": 2981,
+          "head_name": "Terrorist_(Taliban)",
+          "relation_id": 10,
+          "relation_name": "Use_unconventional_violence",
+          "tail_id": 588,
+          "tail_name": "Education_(Pakistan)"
+        },
+        "prediction": {
+          "predicted_entity_id": 588,
+          "predicted_entity_name": "Education_(Pakistan)",
+          "rank": 1,
+          "score": -0.7349675893783569
+        },
+        "ground_truth": {
+          "true_entity_id": 588,
+          "true_entity_name": "Education_(Pakistan)"
+        },
+        "is_correct": true,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 355,
+        "query": {
+          "head_id": 1347,
+          "head_name": "Ali_Bongo_Ondimba",
+          "relation_id": 2,
+          "relation_name": "Make_an_appeal_or_request",
+          "tail_id": 3706,
+          "tail_name": "Government_(Gabon)"
+        },
+        "prediction": {
+          "predicted_entity_id": 10,
+          "predicted_entity_name": "France",
+          "rank": 5586,
+          "score": -1.5127830505371094
+        },
+        "ground_truth": {
+          "true_entity_id": 3706,
+          "true_entity_name": "Government_(Gabon)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 355,
+        "query": {
+          "head_id": 2581,
+          "head_name": "Military_Personnel_(Liberia)",
+          "relation_id": 0,
+          "relation_name": "Make_statement",
+          "tail_id": 2126,
+          "tail_name": "Media_(Liberia)"
+        },
+        "prediction": {
+          "predicted_entity_id": 3641,
+          "predicted_entity_name": "Drug_Enforcement_(Liberia)",
+          "rank": 3,
+          "score": -1.9486628770828247
+        },
+        "ground_truth": {
+          "true_entity_id": 2126,
+          "true_entity_name": "Media_(Liberia)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 356,
+        "query": {
+          "head_id": 1993,
+          "head_name": "Police_(Dominican_Republic)",
+          "relation_id": 20,
+          "relation_name": "Reject",
+          "tail_id": 73,
+          "tail_name": "Poland"
+        },
+        "prediction": {
+          "predicted_entity_id": 2460,
+          "predicted_entity_name": "Criminal_(Dominican_Republic)",
+          "rank": 153,
+          "score": -1.6155471801757812
+        },
+        "ground_truth": {
+          "true_entity_id": 73,
+          "true_entity_name": "Poland"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      },
+      {
+        "timestamp": 357,
+        "query": {
+          "head_id": 757,
+          "head_name": "Head_of_Government_(Senegal)",
+          "relation_id": 3,
+          "relation_name": "Express_intent_to_meet_or_negotiate",
+          "tail_id": 3818,
+          "tail_name": "Legislature_(Senegal)"
+        },
+        "prediction": {
+          "predicted_entity_id": 264,
+          "predicted_entity_name": "Macky_Sall",
+          "rank": 21,
+          "score": -0.6634400486946106
+        },
+        "ground_truth": {
+          "true_entity_id": 3818,
+          "true_entity_name": "Legislature_(Senegal)"
+        },
+        "is_correct": false,
+        "hop_category": "4+hop"
+      }
+    ]
+  },
+  "statistics": {
+    "1-hop": {
+      "total": 50,
+      "correct": 29,
+      "accuracy": 0.58,
+      "avg_rank": 7.36
+    },
+    "2-hop": {
+      "total": 50,
+      "correct": 7,
+      "accuracy": 0.14,
+      "avg_rank": 246.08
+    },
+    "3-hop": {
+      "total": 50,
+      "correct": 5,
+      "accuracy": 0.1,
+      "avg_rank": 420.06
+    },
+    "4+hop": {
+      "total": 50,
+      "correct": 3,
+      "accuracy": 0.06,
+      "avg_rank": 1518.84
+    }
+  }
+}
